@@ -1,4 +1,4 @@
-![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")
+<img id="icon" src="https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png ">
 
 #BEWD - This Is A TEST 
 
@@ -45,13 +45,15 @@ To set us for a great class we are going to learn command line and git this clas
 
 *	To pass the course: 
 	*	Complete 80% of all assigned homework
-	*	Complete [final project]()
-	
-*	What you will get from us
-	* Code Alongs
-	*	Exercises
+	*	Complete final project
+---
+
+##Course Administration
+###What You Will Get From Us
+
+	* In Class Labs
+	* Homework
 	* Slides / resource markdown file to be viewed in GitHub
-	*Quick Fires and Quiz
 	* Awesome instructor
 
 ---
@@ -74,12 +76,12 @@ To set us for a great class we are going to learn command line and git this clas
 ##Command Line
 ###Why Work Like A Developer?
 
-*	Its faster
+* 	Its Fast!
 	*	Working with keyboard increases your speed. The mouse slows you down.
 	*	You are always typing when coding, staying in the environment is faster.
 
-* Its Cool!
-	*	Impress your friends as you navigate the computer by only using your keyboard.
+* 	Its Cool!
+	*	Impress your friends as you navigate the computer using your keyboard.
 ---
 
 
@@ -96,19 +98,18 @@ To set us for a great class we are going to learn command line and git this clas
 ###How Do You Use It?
 
 *	Shell Commands.
-	*	[List Of Commands]()
 
 ---
 
 
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
+<img id="icon" src="../../assets/ICL_icons/Code_along_icon_md.png">
 ##Command Line Basics
 
 ---
 
 
-![GeneralAssemb.ly](../../assets/ICL_icons/Exercise_icon_md.png)
+<img id="icon" src="../../assets/ICL_icons/Exercise_icon_md.png">
 ## Command Line Basics Exercise
 ---
 
@@ -150,8 +151,7 @@ To set us for a great class we are going to learn command line and git this clas
 ---
 
 
-
-![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
+<img id="icon" src="../../assets/ICL_icons/Code_along_icon_md.png">
 ##Git Basics
 
 ---
@@ -174,8 +174,7 @@ To set us for a great class we are going to learn command line and git this clas
 ---
 
 
-
-![GeneralAssemb.ly](../../assets/ICL_icons/Code_along_icon_md.png)
+<img id="icon" src="../../assets/ICL_icons/Code_along_icon_md.png">
 ##Git In Class
 
 ---
@@ -188,8 +187,7 @@ To set us for a great class we are going to learn command line and git this clas
 ---
 
 
-
-![GeneralAssemb.ly](../../assets/ICL_icons/Exercise_icon_md.png)
+<img id="icon" src="../../assets/ICL_icons//Exercise_icon_md.png">
 ## Git It Together
 
 ---
