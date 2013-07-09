@@ -50,7 +50,7 @@ _**Make sure you can**_:
 5.	View/open files
 6.	Navigate using relative paths
 7.	List all the files or directories that begin with “G”
-8.	Use tab completion to view recently typed commands using the up arrow
+8.	View recently typed commands using the up arrow
 
 __VERSION CONTROL__
 
