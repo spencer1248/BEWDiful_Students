@@ -113,7 +113,6 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
     "VDI" type and then the "Dynamically allocated" option. Name the
     virtual hard drive file anything and select an amount of hard drive
     space that your computer is capable of supporting. 8GB should be plenty.
-
   * After clicking "Create", select the new virtual machine you created
     in the left column and press the "Start" button.
   * In the "Select start-up disk" window, select the Ubuntu Linux .iso
