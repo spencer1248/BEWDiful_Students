@@ -8,51 +8,38 @@ BACK-END WEB DEVELOPMENT
 
 ##Apple Mac Users 
 
+Commands that look like ```this``` should be entered into your Terminal
+application. It can be found in Applictions/Utilities.
+
 1.	__Make sure you have an apple ID__ (you should already have one). 
 
-2.	__Xcode installed?__
-	*	Go to step 4
+2. __Install Command Line Tools__
+  * https://developer.apple.com/downloads/index.action
+  * Search for "Command Line Tools" and select the version appropriate
+    for your operating system.
 
-3.	__Xcode not installed?__ 
-	*	Go to: [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
-	*	Log in with your Apple ID and password (same as iTunes).
-	*	Install Command Line Tools for your operating system.
-	*	Check install: ```$ gcc --version```
-
-
-4.	__Install homebrew from terminal:__
-	*	```$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)```
-	*	After install is complete: ```$ brew doctor```
-		*	__If you get following error:__ 
-		
-				"Warning: Experimental support for using Xcode without the "Command Line Tools".
-		
-		Go back to step 1.
-
+3. __Install Homebrew__
+  * ```ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"```
+  * The install page if you have trouble: http://mxcl.github.io/homebrew/
 
 5.	__Install Git__
 	*	```$ brew update```
 	*	```$ brew install git```
-	*	Check install:
-		*	```$ which git```
-			*	should get:	 
-				/use/local/bin/git
 
 6.	__Configure Git with your Name and Email__
 	*	Make sure you use the same email address for Git, GitHub, and Heroku.
+    * https://help.github.com/articles/setting-your-email-in-git
+    * https://help.github.com/articles/setting-your-username-in-git
 
 7.	__Install RVM with Ruby 2.0.0__
-	*	```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enable```
-		This will take a few minutes, and once it’s done, quit and relaunch Terminal, then run this command:
-	*	```$ type rvm | head -1```
-		If you get rvm is a function, that means RVM was successfully installed. 
+  * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
 	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
 		*	For RVM
 			*	```$ rvm -v```
 				
 				You should get 
 
-					rvm 2.0.0 or higher.
+					rvm 1.0.0 or higher.
 		* 	For Ruby
 
 			*	```$ ruby -v```
@@ -60,15 +47,6 @@ BACK-END WEB DEVELOPMENT
 				You should get 
 
 					ruby 2.0.0p0 or higher.
-
-		* 	For Rails
-
-			*	```$ rails -v```
-				
-				You should get 
-				
-					Rails 3.2.13 or higher.
-
 
 Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#step-1
 )
@@ -80,6 +58,9 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
 
 2. __Install git__
   * ```sudo apt-get install build-essential git-core```
+  * Set your git name and email:
+    * https://help.github.com/articles/setting-your-email-in-git
+    * https://help.github.com/articles/setting-your-username-in-git
 
 3. __Install curl__
   * ```sudo apt-get install curl```
@@ -88,6 +69,21 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
   * The backslash in font of "curl" is not a typo.
   * ```rvm use 2.0.0 --default```
+
+	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
+		*	For RVM
+			*	```$ rvm -v```
+				
+				You should get 
+
+					rvm 1.0.0 or higher.
+		* 	For Ruby
+
+			*	```$ ruby -v```
+			
+				You should get 
+
+					ruby 2.0.0p0 or higher.
 
 ##Windows Users
 
