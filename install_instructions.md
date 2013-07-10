@@ -33,7 +33,7 @@ application. It can be found in Applications/Utilities.
 
 7.	__Install RVM with Ruby 2.0.0__
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
-	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
+	*	Make sure the latest versions of RVM and Ruby were installed, run the commands below:
 		*	For RVM
 			*	```rvm -v```
 				
@@ -62,7 +62,7 @@ application. It can be found in Applications/Utilities.
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
   * The backslash in font of "curl" is not a typo.
   * ```rvm use 2.0.0 --default```
-	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
+	*	Make sure the latest versions of RVM and Ruby were installed, run the commands below:
 		*	For RVM
 			*	```rvm -v```
 				You should get rvm 1.0.0 or higher.
