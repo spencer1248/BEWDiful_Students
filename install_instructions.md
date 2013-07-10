@@ -52,6 +52,7 @@ application. It can be found in Applictions/Utilities.
 2. __Install git__
   * ```sudo apt-get install build-essential git-core```
   * Set your git name and email:
+
     * https://help.github.com/articles/setting-your-email-in-git
     * https://help.github.com/articles/setting-your-username-in-git
 
