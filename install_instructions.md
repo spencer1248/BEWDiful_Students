@@ -91,7 +91,37 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
 
 ##Windows Users
 
-Coming soon
+1. __Install VirtualBox__
+  * https://www.virtualbox.org/wiki/Downloads
+
+2. __Download Ubuntu Linux__
+  * http://www.ubuntu.com/download/desktop
+  * Version 13.04 is probably preferable but 12.04 is also fine.
+
+3. __Create your virtual machine__
+  * Open VirtualBox and click the "New" button
+  * Enter any name
+  * Select "Linux" as the type
+  * Select either "Ubuntu" or "Ubuntu (64 bit)" as the version depending on
+    which you downloaded.
+  * Memory size is the amoung of your RAM that will be used to run
+    Linux. 1024MB should be more than enough, but if you have a lot of
+    RAM you can boost this number. If your machine only has 1GB of RAM
+    then 512MB will have to do. If you're not sure, don't worry because
+    this value can be changed later.
+  * Hard drive - Select "Create a virtual hard drive now" then use the
+    "VDI" type and then the "Dynamically allocated" option. Name the
+    virtual hard drive file anything and select an amount of hard drive
+    space that your computer is capable of supporting. 8GB should be plenty.
+
+  * After clicking "Create", select the new virtual machine you created
+    in the left column and press the "Start" button.
+  * In the "Select start-up disk" window, select the Ubuntu Linux .iso
+    file you downloaded and press start. You can then follow the Ubuntu
+    installation instructions.
+
+4. __Setup Ubuntu__
+  * Now see the the installation instructions for Ubuntu Linux!
 
 ##Happy Coding :)
 
