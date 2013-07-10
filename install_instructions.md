@@ -23,8 +23,8 @@ application. It can be found in Applictions/Utilities.
   * The install page if you have trouble: http://mxcl.github.io/homebrew/
 
 5.	__Install Git__
-	*	```$ brew update```
-	*	```$ brew install git```
+	*	```brew update```
+	*	```brew install git```
 
 6.	__Configure Git with your Name and Email__
 	*	Make sure you use the same email address for Git, GitHub, and Heroku.
@@ -35,20 +35,18 @@ application. It can be found in Applictions/Utilities.
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
 	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
 		*	For RVM
-			*	```$ rvm -v```
+			*	```rvm -v```
 				
 				You should get 
 
 					rvm 1.0.0 or higher.
 		* 	For Ruby
 
-			*	```$ ruby -v```
+			*	```ruby -v```
 			
 				You should get 
 
 					ruby 2.0.0p0 or higher.
-
-Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#step-1
 )
 
 ##Ubuntu Linux Users
@@ -72,14 +70,14 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
 
 	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
 		*	For RVM
-			*	```$ rvm -v```
+			*	```rvm -v```
 				
 				You should get 
 
 					rvm 1.0.0 or higher.
 		* 	For Ruby
 
-			*	```$ ruby -v```
+			*	```ruby -v```
 			
 				You should get 
 
