@@ -104,7 +104,7 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
   * Select "Linux" as the type
   * Select either "Ubuntu" or "Ubuntu (64 bit)" as the version depending on
     which you downloaded.
-  * Memory size is the amoung of your RAM that will be used to run
+  * Memory size is the amount of your RAM that will be used to run
     Linux. 1024MB should be more than enough, but if you have a lot of
     RAM you can boost this number. If your machine only has 1GB of RAM
     then 512MB will have to do. If you're not sure, don't worry because
