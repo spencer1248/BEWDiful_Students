@@ -73,9 +73,21 @@ BACK-END WEB DEVELOPMENT
 Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#step-1
 )
 
-##Ubuntu Linus Users
+##Ubuntu Linux Users
 
-Coming soon
+1. __Open a terminal window__
+  * http://askubuntu.com/questions/196212/how-do-you-open-a-command-line
+
+2. __Install git__
+  * sudo apt-get install build-essential git-core
+
+3. __Install curl__
+  * sudo apt-get install curl
+
+4. __Install RVM__
+  * \curl -L https://get.rvm.io | bash -s stable --ruby
+  * The backslash in font of "curl" is not a typo.
+  * rvm use 2.0.0 --default
 
 ##Windows Users
 
