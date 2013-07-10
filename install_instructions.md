@@ -46,6 +46,9 @@ application. It can be found in Applications/Utilities.
 
 ##Ubuntu Linux Users
 
+Commands that look like ```this``` should be entered into your Terminal
+application.
+
 1. __Open a terminal window__
   * http://askubuntu.com/questions/196212/how-do-you-open-a-command-line
 
