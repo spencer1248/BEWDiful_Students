@@ -9,7 +9,7 @@ BACK-END WEB DEVELOPMENT
 ##Apple Mac Users 
 
 Commands that look like ```this``` should be entered into your Terminal
-application. It can be found in Applictions/Utilities.
+application. It can be found in Applications/Utilities.
 
 1.	__Make sure you have an apple ID__ (you should already have one). 
 
