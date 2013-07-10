@@ -23,11 +23,11 @@ application. It can be found in Applications/Utilities.
   * ```ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"```
   * The install page if you have trouble: http://mxcl.github.io/homebrew/
 
-5.	__Install Git__
+5.	__Install git__
 	*	```brew update```
 	*	```brew install git```
 
-6.	__Configure Git with your Name and Email__
+6.	__Configure git with your Name and Email__
   * https://help.github.com/articles/setting-your-email-in-git
   * https://help.github.com/articles/setting-your-username-in-git
 
