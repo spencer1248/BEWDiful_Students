@@ -28,9 +28,8 @@ application. It can be found in Applictions/Utilities.
 	*	```brew install git```
 
 6.	__Configure Git with your Name and Email__
-	*	Make sure you use the same email address for Git, GitHub, and Heroku.
-    * https://help.github.com/articles/setting-your-email-in-git
-    * https://help.github.com/articles/setting-your-username-in-git
+  * https://help.github.com/articles/setting-your-email-in-git
+  * https://help.github.com/articles/setting-your-username-in-git
 
 7.	__Install RVM with Ruby 2.0.0__
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
