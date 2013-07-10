@@ -4,9 +4,9 @@ BACK-END WEB DEVELOPMENT
 ![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")
 
 
-#Install Git, Ruby and Rails
+#Install git and Ruby
 
-##Apple Mac Users 
+##Mac Users 
 
 Commands that look like ```this``` should be entered into your Terminal
 application. It can be found in Applications/Utilities.
