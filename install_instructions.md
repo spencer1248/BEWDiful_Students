@@ -17,6 +17,7 @@ application. It can be found in Applictions/Utilities.
   * https://developer.apple.com/downloads/index.action
   * Search for "Command Line Tools" and select the version appropriate
     for your operating system.
+  * Install the command line tools from the downloaded file.
 
 3. __Install Homebrew__
   * ```ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"```
