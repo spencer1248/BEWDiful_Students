@@ -79,15 +79,15 @@ Note: Install instructions credit to: [Moncef Belyamani](http://www.moncefbelyam
   * http://askubuntu.com/questions/196212/how-do-you-open-a-command-line
 
 2. __Install git__
-  * sudo apt-get install build-essential git-core
+  * ```sudo apt-get install build-essential git-core```
 
 3. __Install curl__
-  * sudo apt-get install curl
+  * ```sudo apt-get install curl```
 
 4. __Install RVM__
-  * \curl -L https://get.rvm.io | bash -s stable --ruby
+  * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
   * The backslash in font of "curl" is not a typo.
-  * rvm use 2.0.0 --default
+  * ```rvm use 2.0.0 --default```
 
 ##Windows Users
 
