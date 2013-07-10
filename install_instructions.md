@@ -37,17 +37,12 @@ application. It can be found in Applictions/Utilities.
 		*	For RVM
 			*	```rvm -v```
 				
-				You should get 
-
-					rvm 1.0.0 or higher.
+				You should get rvm 1.0.0 or higher.
 		* 	For Ruby
 
 			*	```ruby -v```
 			
-				You should get 
-
-					ruby 2.0.0p0 or higher.
-)
+				You should get ruby 2.0.0p0 or higher.
 
 ##Ubuntu Linux Users
 
