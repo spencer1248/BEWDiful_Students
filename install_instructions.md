@@ -62,21 +62,14 @@ application. It can be found in Applictions/Utilities.
   * ```\curl -L https://get.rvm.io | bash -s stable --ruby```
   * The backslash in font of "curl" is not a typo.
   * ```rvm use 2.0.0 --default```
-
 	*	Make sure the latest versions of RVM, Ruby and Rails were installed, run the commands below:
 		*	For RVM
 			*	```rvm -v```
-				
-				You should get 
-
-					rvm 1.0.0 or higher.
+				You should get rvm 1.0.0 or higher.
 		* 	For Ruby
 
 			*	```ruby -v```
-			
-				You should get 
-
-					ruby 2.0.0p0 or higher.
+				You should get ruby 2.0.0p0 or higher.
 
 ##Windows Users
 
