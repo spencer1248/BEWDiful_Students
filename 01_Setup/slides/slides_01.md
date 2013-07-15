@@ -2,12 +2,6 @@
 
 #BEWD - Working Like A Developer 
 
-###Instructor Name
-
-Spencer Rogers - Consulting developer
-
-Previously a full-stack engineer at Canvas and Technology Director at Designer Pages
-
 ---
 
 
@@ -15,8 +9,8 @@ Previously a full-stack engineer at Canvas and Technology Director at Designer P
 
 *	Intros
 *	What is Web Development
-*	Bash Commands
-*	Using GitHub
+*	Bash
+*	Using git and Github
 
 ---
 
