@@ -43,21 +43,15 @@ During this class we will learn command line, Git, Ruby and Rails, in that order
 
 ##What is Back-End Web Development?
 
-* #### Client
+#### Client
   * An application on the user's computer, frequently a web browser.
   * It makes requests to servers and interprets their responses.
 
-* #### Server
+#### Server
   * A system of hardware and software that supports a web site.
   * It returns responses to clients making requests.
 
-What are the responsibilities of a front-end web developer?
-
-What are the responsibilities of a back-end web developer?
-
 ---
-
-
 
 ##Command Line Shell
 ### A text-based equivalent of the graphical OS interface
