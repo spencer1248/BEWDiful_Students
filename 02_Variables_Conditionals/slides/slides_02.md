@@ -8,7 +8,7 @@
 ##Agenda
 
 
-*	Quiz
+*	Git Review
 *	Intro to Ruby & irb / pry
 * 	Variables
 	* 	Numbers
@@ -20,15 +20,10 @@
 
 ---
 
-##QUIZ
-1.	How do I change directories using the command line?
-2.	What is Git and GitHub?
-3.	How do I add files to git?
-4.	What is a GitHub Repository?
-5.  What is the correct way to push changes to your GitHub repo?
-	a. git pull origin master
-	b. git commit -m "push to GitHub"
-	c. git push origin master
+##Git Review
+
+Update your BEWDiful_Students repository with the updates from the
+"instructor" repository.
 
 ---
 
