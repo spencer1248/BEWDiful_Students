@@ -31,13 +31,11 @@ Update your BEWDiful_Students repository with the updates from the
 ###Ruby
 
 *	An open source programming language
-*	Created by Yukihiro Matsumoto (aka Matz)
-*	Natural to read and easy to write
 
 ###Ruby on Rails
 
-*	Open source web application framework that runs on Ruby
-*	Allows you to create web applications that query a database.
+*	Open source web application framework that is written in Ruby.
+*	More easily enables operations like interacting with a database.
 
 
 ![Ruby Images ](../../assets/ruby/ruby_img.png )
