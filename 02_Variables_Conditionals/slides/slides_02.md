@@ -48,8 +48,6 @@ Update your BEWDiful_Students repository with the updates from the
 
 *	It will be easier to navigate a Rails project once we have a basic understanding of Ruby.
 
-![ Karate Kid](../../assets/ruby/karate_kid.jpg)
-
 ---
 
 
