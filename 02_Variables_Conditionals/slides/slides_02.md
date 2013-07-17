@@ -2,8 +2,6 @@
 
 #BEWD - Variables and Conditional Logic
 
-###Instructor Name
-
 ---
 
 
