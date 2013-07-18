@@ -36,8 +36,34 @@
 
 #adding a second line to test myself on using git correctly.
 
+welcome_line = "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game but, before we can get
+started I am going to need your name.  Please, whenever you are ready."
 
-puts "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game that will 
-give you 3 shots at guessing a number I pick between 1-10, inclusively.  Press enter when you are ready to begin!"
+the_game = "Welcome to my game!  The name of the game is secret number game!  You will have 3 shots to guess a number
+that I pick between 1-10, inclusively."
+
+puts "#{welcome_line}"
+
+name=gets.chomp
+
+unless "#{name}" != name.capitalize 
+	puts "Hey" + " " + "#{name}" + " " + "#{the_game}"
+else 
+	puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
+end
+
+puts "Please let me know that you understand the rules of my game as I take this very very seriously..."
+gets.chomp = response
+ if response.downcase != 'yes' 
+ 	break
+end
+
+
+
+
 
 	
+
+
+
+
