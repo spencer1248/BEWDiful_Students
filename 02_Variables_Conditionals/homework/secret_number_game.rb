@@ -35,3 +35,9 @@
 #adding a line to test myself on using git correctly.
 
 #adding a second line to test myself on using git correctly.
+
+
+puts "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game that will 
+give you 3 shots at guessing a number I pick between 1-10, inclusively.  Press enter when you are ready to begin!"
+
+	
