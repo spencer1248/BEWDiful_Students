@@ -42,6 +42,8 @@ started I am going to need your name.  Please, whenever you are ready."
 the_game = "Welcome to my game!  The name of the game is secret number game!  You will have 3 shots to guess a number
 that I pick between 1-10, inclusively."
 
+understand_game = "Do you understand the rules of the game?"
+
 puts "#{welcome_line}"
 
 name=gets.chomp
@@ -52,11 +54,25 @@ else
 	puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
 end
 
-puts "Please let me know that you understand the rules of my game as I take this very very seriously..."
-gets.chomp = response
- if response.downcase != 'yes' 
- 	break
-end
+
+
+#making sure that the user understands the name of the game....  allowing the user to say yes anyway he wishes and I already gave him/her a hard time
+#about the name capitalized.  
+puts "#{understand_game}"
+gets.downcase.chomp
+response = gets.chomp
+
+until response == 'yes'
+	puts "#{understand_game}"
+end 
+
+# puts "Please let me know that you understand the rules of my game as I take this very very seriously...a simple yes or no will do"
+# gets.chomp = response
+#  if response.downcase != 'yes' 
+#  	break
+# end
+
+#This part will begin the actual game.  I am going to use a random number generator with a ruby method d
 
 
 
