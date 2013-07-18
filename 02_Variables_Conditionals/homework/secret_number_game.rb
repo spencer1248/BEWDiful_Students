@@ -31,3 +31,5 @@
 # Make sure to add helpful comments to your code to document what each section does.
 # 
 # Remember to cast input from the Player into the appropriate data type.
+
+#adding a line to test myself on using git correctly.
