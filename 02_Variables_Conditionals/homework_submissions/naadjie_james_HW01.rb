@@ -45,14 +45,16 @@ total_guesses = 3
 def guess_checker(guess,secret_number,total_guesses)
     if guess == secret_number
        puts "You Win! Thank you for playing"
+    elsif total_guesses == 1 && guess > secret_number
+          puts "Your final guess is too high: You lose, the secret number is #{secret_number}"
     elsif guess > secret_number
        puts "Your guess is too high"
     elsif total_guesses == 1 && guess < secret_number
-          puts "Your final guess is too low: You lose"
+          puts "Your final guess is too low: You lose, the secret number is #{secret_number}"
     elsif guess < secret_number
           puts "Your guess is too low"
     elsif total_guesses == 1 && guess != secret_number
-          puts "You lose: Thank you for playing"
+          puts "You lose: Thank you for playing; the secret number is #{secret_number}"
     end
     
 end
@@ -77,11 +79,7 @@ total_guesses -= 1
  puts "You have #{total_guesses} guess left, Please enter your Last guess"
  last_guess = gets.chomp.to_i
  guess_checker(last_guess,secret_number,total_guesses)
- #if last_guess == secret_number
-  #  puts "You win, great first guess"
- #else
-  #   puts "You Lose!. Thank you for playing"
- #end
+
 ##########################Program End ###################################     
  
  
