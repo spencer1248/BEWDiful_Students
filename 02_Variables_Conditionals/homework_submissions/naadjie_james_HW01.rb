@@ -41,7 +41,7 @@ secret_number = 6
 total_guesses = 3
 ################ Variables ##################
 
-#############method to check if the first two guesses are high,low or correct##############
+#############method to check if the guesses are high,low or correct##############
 def guess_checker(guess,secret_number,total_guesses)
     if guess == secret_number
        puts "You Win! Thank you for playing"
