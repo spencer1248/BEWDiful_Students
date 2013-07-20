@@ -112,23 +112,29 @@ secret_number = 5
 puts "you have 3 guesses... whats's your number?"
 user_number=gets.chomp.to_i
 
-until counter == 1 || user_number == secret_number do
+while counter > 0 do 
+counter -= 1 
 
-if user_number == secret_number
+ if user_number == secret_number
 	puts "That's awesome!"
-elsif 
-	counter -= 1
+	break
+	
+
+elsif counter == 0
+	  puts "Sorry! You lost"
+	  
+
+else
+	
 	puts "Nope... sorry you now only have\s" + "#{counter}" +"\s left, go ahead and guess again"
 	secret_number = gets.chomp.to_i
-else puts "fuck yo couch"
-end 
 
 end 
-puts "I'm sorry you lost!!!!"
-
+end 
 	# puts "you have\s" + "#{counter}" +"\s left"
 	# user_number = gets.chomp
 
+# user_number == secret_number do
 
 
 	# puts "whats your number"
