@@ -76,7 +76,11 @@
 
 #setting up random number 
 
-my_secret_number = rand(1 .. 10)
+my_secret_number_generator = rand(1 .. 10)
+my_secret_number = my_secret_number_generator
+
+
+
 
 
 
