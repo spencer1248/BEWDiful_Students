@@ -36,37 +36,50 @@
 
 #adding a second line to test myself on using git correctly.
 
-welcome_line = "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game but, before we can get
-started I am going to need your name.  Please, whenever you are ready enter your name."
+# -----------
 
-the_game = "Welcome to my game.  The name of the game is Andrew Silbersmith's Secret Number Game!  You will have 3 shots to guess a number
-that I pick between 1-10, inclusively."
+# welcome_line = "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game but, before we can get
+# started I am going to need your name.  Please, whenever you are ready enter your name."
 
-understand_game = "Do you understand the rules of the game?"
+# the_game = "Welcome to my game.  The name of the game is Andrew Silbersmith's Secret Number Game!  You will have 3 shots to guess a number
+# that I pick between 1-10, inclusively."
 
-puts "#{welcome_line}"
+# understand_game = "Do you understand the rules of the game?"
 
-
-#this section will mess with the user to enter his name with a capital letter first and basically state the game and get the players number.  If the player does not
-#agree with his name, the game will end and if the player does not agree to the rules the game will end.  
-#***still need to break if player doesn't agree with name and still have to have them agree to understading the rules but moving forward for right now.  
+# puts "#{welcome_line}"
 
 
-if player_name == player_name.capitalize
-	puts "Hey\s" + ' ' + "#{player_name}!\s"+ "#{the_game}"
-else 
-    puts "#{player_name}!?\s" + "What were you born in a barn!?"
-    puts  "#{player_name}!\s".capitalize + "That\'s what you meant to say right?"
-	reply = gets.chomp
+# #this section will mess with the user to enter his name with a capital letter first and basically state the game and get the players number.  If the player does not
+# #agree with his name, the game will end and if the player does not agree to the rules the game will end.  
+# #***still need to break if player doesn't agree with name and still have to have them agree to understading the rules but moving forward for right now.  
 
-	if reply.downcase == 'yes' || 'right'
-		puts "Hey\s" + "#{player_name}!\s".capitalize + "#{the_game}" 
+
+# if player_name == player_name.capitalize
+# 	puts "Hey\s" + ' ' + "#{player_name}!\s"+ "#{the_game}"
+# else 
+#     puts "#{player_name}!?\s" + "What were you born in a barn!?"
+#     puts  "#{player_name}!\s".capitalize + "That\'s what you meant to say right?"
+# 	reply = gets.chomp
+
+# 	if reply.downcase == 'yes' || 'right'
+# 		puts "Hey\s" + "#{player_name}!\s".capitalize + "#{the_game}" 
 		 
-	 else 	
-	 puts "Learn your name!\s" + "#{player_name}!".swapcase + "Goodbye"
-	end 
+# 	 else 	
+# 	 puts "Learn your name!\s" + "#{player_name}!".swapcase + "Goodbye"
+# 	end 
 
-end 
+# end 
+
+# ----------
+
+
+
+#setting up random number 
+
+my_secret_number = rand(1 .. 10)
+
+
+
 
 
 # #this may work for the counter.
@@ -77,7 +90,7 @@ end
 #    puts("Inside the loop i = #$i" )
 #    $i +=1
 # end
-
+#
 # ----
 
 # # rand(1 .. 10)
