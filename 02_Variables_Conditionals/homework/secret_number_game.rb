@@ -45,70 +45,45 @@ that I pick between 1-10, inclusively."
 understand_game = "Do you understand the rules of the game?"
 
 puts "#{welcome_line}"
-name = gets.chomp
 
-puts "Hey" + " " "#{name}" + "!" + " " + "#{the_game}"
 
-if name == name.capitlize 
-	puts "#{the_game}"
-else
-	puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
+#this section will mess with the user to enter his name with a capital letter first and basically state the game and get the players number.  If the player does not
+#agree with his name, the game will end and if the player does not agree to the rules the game will end.  
+#***still need to break if player doesn't agree with name and still have to have them agree to understading the rules but moving forward for right now.  
+
+
+if player_name == player_name.capitalize
+	puts "Hey\s" + ' ' + "#{player_name}!\s"+ "#{the_game}"
+else 
+    puts "#{player_name}!?\s" + "What were you born in a barn!?"
+    puts  "#{player_name}!\s".capitalize + "That\'s what you meant to say right?"
+	reply = gets.chomp
+
+	if reply.downcase == 'yes' || 'right'
+		puts "Hey\s" + "#{player_name}!\s".capitalize + "#{the_game}" 
+		 
+	 else 	
+	 puts "Learn your name!\s" + "#{player_name}!".swapcase + "Goodbye"
+	end 
+
 end 
 
 
-puts "#{name}"
+# #this may work for the counter.
+# $i = 0
+# $num = 5
 
-
-# if "#{name}" = "#{name}".capitalize
-# 	puts "#{the_game}"
-# else puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
+# while $i < $num  do
+#    puts("Inside the loop i = #$i" )
+#    $i +=1
 # end
 
+# ----
+
+# # rand(1 .. 10)
+# "Learn your name!\s" + "#{player_name}!".swapcase 
 
 
-
-
-# unless "#{name}" == name.capitalize 
-# 	puts 
-
-
-
-# 	"#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
-# 	gets.chomp
-# 	gets.downcase.chomp = response
-# 	end
-
-
-
-# if "#{name}" == name.capitalize 
-# 	puts "Hey" + " " + "#{name}" + " " + "#{the_game}"
-# elsif
-# 	puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
-# 	gets.chomp
-# 	gets.downcase.chomp = response
-# 	if response != 'yes' break
-	
-
-
-
-# end
-
-
-
-# #making sure that the user understands the name of the game....  allowing the user to say yes anyway he wishes and I already gave him/her a hard time
-# #about the name capitalized.  
-
-# puts "#{understand_game}"
-# gets.downcase.chomp
-# response = gets.chomp
-
-# until response == 'yes'
-# 	puts "#{understand_game}"
-# end 
-
-
-
-#This part will begin the actual game.  I am going to use a random number generator with a ruby method d
 
 
 
