@@ -37,40 +37,76 @@
 #adding a second line to test myself on using git correctly.
 
 welcome_line = "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game but, before we can get
-started I am going to need your name.  Please, whenever you are ready."
+started I am going to need your name.  Please, whenever you are ready enter your name."
 
-the_game = "Welcome to my game!  The name of the game is secret number game!  You will have 3 shots to guess a number
+the_game = "Welcome to my game.  The name of the game is Andrew Silbersmith's Secret Number Game!  You will have 3 shots to guess a number
 that I pick between 1-10, inclusively."
 
 understand_game = "Do you understand the rules of the game?"
 
 puts "#{welcome_line}"
+name = gets.chomp
 
-name=gets.chomp
+puts "Hey" + " " "#{name}" + "!" + " " + "#{the_game}"
 
-unless "#{name}" != name.capitalize 
-	puts "Hey" + " " + "#{name}" + " " + "#{the_game}"
-else 
+if name == name.capitlize 
+	puts "#{the_game}"
+else
 	puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
-end
-
-
-
-#making sure that the user understands the name of the game....  allowing the user to say yes anyway he wishes and I already gave him/her a hard time
-#about the name capitalized.  
-puts "#{understand_game}"
-gets.downcase.chomp
-response = gets.chomp
-
-until response == 'yes'
-	puts "#{understand_game}"
 end 
 
-# puts "Please let me know that you understand the rules of my game as I take this very very seriously...a simple yes or no will do"
-# gets.chomp = response
-#  if response.downcase != 'yes' 
-#  	break
+
+puts "#{name}"
+
+
+# if "#{name}" = "#{name}".capitalize
+# 	puts "#{the_game}"
+# else puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
 # end
+
+
+
+
+
+# unless "#{name}" == name.capitalize 
+# 	puts 
+
+
+
+# 	"#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
+# 	gets.chomp
+# 	gets.downcase.chomp = response
+# 	end
+
+
+
+# if "#{name}" == name.capitalize 
+# 	puts "Hey" + " " + "#{name}" + " " + "#{the_game}"
+# elsif
+# 	puts "#{name}" + '!?' ' What were you born in a barn!?' + ' ' + name.capitalize + '!' + ' ' + 'That\'s what you meant to say right?' 
+# 	gets.chomp
+# 	gets.downcase.chomp = response
+# 	if response != 'yes' break
+	
+
+
+
+# end
+
+
+
+# #making sure that the user understands the name of the game....  allowing the user to say yes anyway he wishes and I already gave him/her a hard time
+# #about the name capitalized.  
+
+# puts "#{understand_game}"
+# gets.downcase.chomp
+# response = gets.chomp
+
+# until response == 'yes'
+# 	puts "#{understand_game}"
+# end 
+
+
 
 #This part will begin the actual game.  I am going to use a random number generator with a ruby method d
 
