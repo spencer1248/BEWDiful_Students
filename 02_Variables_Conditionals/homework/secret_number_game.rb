@@ -36,7 +36,8 @@
 
 #adding a second line to test myself on using git correctly.
 
-# -----------
+
+#-----
 
 # welcome_line = "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game but, before we can get
 # started I am going to need your name.  Please, whenever you are ready enter your name."
@@ -49,11 +50,12 @@
 # puts "#{welcome_line}"
 
 
+
 # #this section will mess with the user to enter his name with a capital letter first and basically state the game and get the players number.  If the player does not
 # #agree with his name, the game will end and if the player does not agree to the rules the game will end.  
 # #***still need to break if player doesn't agree with name and still have to have them agree to understading the rules but moving forward for right now.  
 
-
+# player_name = gets.chomp
 # if player_name == player_name.capitalize
 # 	puts "Hey\s" + ' ' + "#{player_name}!\s"+ "#{the_game}"
 # else 
@@ -66,39 +68,81 @@
 		 
 # 	 else 	
 # 	 puts "Learn your name!\s" + "#{player_name}!".swapcase + "Goodbye"
-# 	end 
-
-# end 
-
-# ----------
 
 
+# 	end
 
-#setting up random number 
+# # end 
 
-my_secret_number_generator = rand(1 .. 10)
-my_secret_number = my_secret_number_generator
-
-
+# -----
 
 
+# adding 
+
+
+counter = 2
+secret_number = 5
+
+	
+#making an if then for which prompt is given based on their number of guesses left...  
+if   counter == 3
+  	 puts "ok this is your first try go ahead"
+else puts "ok, you are down to" + "#{counter}" + "of guesses"
+end 
 
 
 
 
-# #this may work for the counter.
-# $i = 0
-# $num = 5
 
-# while $i < $num  do
-#    puts("Inside the loop i = #$i" )
-#    $i +=1
-# end
-#
-# ----
 
-# # rand(1 .. 10)
-# "Learn your name!\s" + "#{player_name}!".swapcase 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
