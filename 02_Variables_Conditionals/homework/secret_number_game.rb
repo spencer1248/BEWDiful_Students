@@ -80,21 +80,82 @@
 # adding 
 
 
-counter = 2
-secret_number = 5
+# counter = 3
+# secret_number = 5
 
 	
-#making an if then for which prompt is given based on their number of guesses left...  
-if   counter == 3
-  	 puts "ok this is your first try go ahead"
-else puts "ok, you are down to" + "#{counter}" + "of guesses"
+# #making an if else for which prompt is given based on their number of guesses left...  
+
+
+# if counter == 3
+# 	puts "ok this is your first try go ahead"
+
+# else puts "ok, you are down to" + "#{counter}" + "of guesses"
+
+# user_number = gets.chomp.to_i
+# end 
+
+# if    user_number == secret_number
+# 	  puts "Holy Smokes! How did you know what I was thinking"
+
+# elsif while user_number != secret_number || counter == 0
+# 	counter -= 1
+
+# else puts "What a loser you are! Game over!"
+
+# end
+
+
+counter = 3
+secret_number = 5
+
+puts "you have 3 guesses... whats's your number?"
+user_number=gets.chomp.to_i
+
+until counter == 1 || user_number == secret_number do
+
+if user_number == secret_number
+	puts "That's awesome!"
+elsif 
+	counter -= 1
+	puts "Nope... sorry you now only have\s" + "#{counter}" +"\s left, go ahead and guess again"
+	secret_number = gets.chomp.to_i
+else puts "fuck yo couch"
 end 
 
+end 
+puts "I'm sorry you lost!!!!"
+
+	# puts "you have\s" + "#{counter}" +"\s left"
+	# user_number = gets.chomp
+
+
+
+	# puts "whats your number"
+	# user_number = gets.chomp
 
 
 
 
 
+
+
+# while counter >=0<3
+# 	counter -= 1
+# end 
+# puts "#{counter}"
+
+
+
+# 	puts 
+# if 	endendenduser_number == secret_number
+# 	puts "WoW! How did you know what I was thinking!"
+# else 
+# 	puts ""
+
+
+
+# end 
 
 
 
