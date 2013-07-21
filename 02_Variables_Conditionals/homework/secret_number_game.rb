@@ -31,8 +31,9 @@
 
 
 
-# adding 
+
 rules ="I pick a number between 1-10 inclusively and you have 3 chances to guess it right.\nI'll tell you how many chances you have left after each guess along the way."
+puts ""
 print "Hey, thanks for swinging by to say hello! I'm Andrew Awesome, please enter your name\nif you would like to hear about my simple number game!"
 
 user_name = gets.capitalize.chomp
@@ -42,39 +43,38 @@ gets
 
 
 
+# setting a variable to the random number variable so we keep the same random generated number throughout
+secret_random_generator = rand(1..10)
+my_secret_number = secret_random_generator
+counter = 3
+puts "you have 3 guesses... whats's your number?"
+user_number = gets.chomp.to_i
 
 
 
+while counter > 0 do 
+counter -= 1 
 
-
-# # setting a variable to the random number variable so we keep the same random generated number throughout
-# secret_random_generator = rand(1..10)
-# my_secret_number = secret_random_generator
-# counter = 3
-# puts "you have 3 guesses... whats's your number?"
-# user_number = gets.chomp.to_i
-
-# while counter > 0 do 
-# counter -= 1 
-
-#  if user_number == my_secret_number
-# 	puts "That's awesome!"
-# 	break
+ if user_number == my_secret_number
+	puts "That's awesome!\s" + ("Go" +  "#{user_name}!!!") * 3
+	break
 	
-# elsif counter == 0
-# 	  puts "Sorry! You lost"
+elsif counter == 0
+	  puts "Sorry!\s" + "#{user_name}!\s" +"You lost!!!!!!!!!!\s" + "LOSER LOSER LOSER!"
 	  
-# else puts "Nope... sorry you now only have\s" + "#{counter}" +"\s left, go ahead and guess again" 
-# 	 user_number = gets.chomp.to_i
+else 
 
-# 	end 
-# end 
+	 puts "#{user_number}!?\s" + "Hmmmmmmmmm let me think....." + "Nope!\s Cmon " "#{user_name}!\s" + " Dont't embarrass yourself.. you only have\s" + "#{counter}\s" + "guesses left.. listen closely..." 
+	 if user_number < my_secret_number 
+	 	puts "Try something bigger...."
+	 else puts "Try something smaller...."
+	 end 
+
+	 user_number = gets.chomp.to_i
 	
 
-
-
-
-
+	end 
+end 
 
 
 
