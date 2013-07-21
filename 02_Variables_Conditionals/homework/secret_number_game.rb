@@ -28,140 +28,50 @@
 #		  "You have X many guesses before the game is over enter a another number"
 #	 -	If they don't guess correctly after 3 tries, print that the Player lost and the game is over. Also let them know what the `secret_number` was.
 #
-# Make sure to add helpful comments to your code to document what each section does.
-# 
-# Remember to cast input from the Player into the appropriate data type.
 
-#adding a line to test myself on using git correctly.
-
-#adding a second line to test myself on using git correctly.
-
-
-#-----
-
-# welcome_line = "Welcome to my secret number game! My name is Andrew Silbersmith and I have written a little game but, before we can get
-# started I am going to need your name.  Please, whenever you are ready enter your name."
-
-# the_game = "Welcome to my game.  The name of the game is Andrew Silbersmith's Secret Number Game!  You will have 3 shots to guess a number
-# that I pick between 1-10, inclusively."
-
-# understand_game = "Do you understand the rules of the game?"
-
-# puts "#{welcome_line}"
-
-
-
-# #this section will mess with the user to enter his name with a capital letter first and basically state the game and get the players number.  If the player does not
-# #agree with his name, the game will end and if the player does not agree to the rules the game will end.  
-# #***still need to break if player doesn't agree with name and still have to have them agree to understading the rules but moving forward for right now.  
-
-# player_name = gets.chomp
-# if player_name == player_name.capitalize
-# 	puts "Hey\s" + ' ' + "#{player_name}!\s"+ "#{the_game}"
-# else 
-#     puts "#{player_name}!?\s" + "What were you born in a barn!?"
-#     puts  "#{player_name}!\s".capitalize + "That\'s what you meant to say right?"
-# 	reply = gets.chomp
-
-# 	if reply.downcase == 'yes' || 'right'
-# 		puts "Hey\s" + "#{player_name}!\s".capitalize + "#{the_game}" 
-		 
-# 	 else 	
-# 	 puts "Learn your name!\s" + "#{player_name}!".swapcase + "Goodbye"
-
-
-# 	end
-
-# # end 
-
-# -----
 
 
 # adding 
+rules ="I pick a number between 1-10 inclusively and you have 3 chances to guess it right.\nI'll tell you how many chances you have left after each guess along the way."
+print "Hey, thanks for swinging by to say hello! I'm Andrew Awesome, please enter your name\nif you would like to hear about my simple number game!"
+
+user_name = gets.capitalize.chomp
+puts "hey\s" +"#{user_name}!\s" + "It's a pleasure to meet you. The game is really simple.\n"  + "#{rules}\s" + "Press enter whenever you are ready to play"
+
+gets
 
 
+
+
+
+
+
+
+# # setting a variable to the random number variable so we keep the same random generated number throughout
+# secret_random_generator = rand(1..10)
+# my_secret_number = secret_random_generator
 # counter = 3
-# secret_number = 5
-
-	
-# #making an if else for which prompt is given based on their number of guesses left...  
-
-
-# if counter == 3
-# 	puts "ok this is your first try go ahead"
-
-# else puts "ok, you are down to" + "#{counter}" + "of guesses"
-
+# puts "you have 3 guesses... whats's your number?"
 # user_number = gets.chomp.to_i
-# end 
 
-# if    user_number == secret_number
-# 	  puts "Holy Smokes! How did you know what I was thinking"
+# while counter > 0 do 
+# counter -= 1 
 
-# elsif while user_number != secret_number || counter == 0
-# 	counter -= 1
-
-# else puts "What a loser you are! Game over!"
-
-# end
-
-
-counter = 3
-secret_number = 5
-
-puts "you have 3 guesses... whats's your number?"
-user_number=gets.chomp.to_i
-
-while counter > 0 do 
-counter -= 1 
-
- if user_number == secret_number
-	puts "That's awesome!"
-	break
+#  if user_number == my_secret_number
+# 	puts "That's awesome!"
+# 	break
 	
-
-elsif counter == 0
-	  puts "Sorry! You lost"
+# elsif counter == 0
+# 	  puts "Sorry! You lost"
 	  
+# else puts "Nope... sorry you now only have\s" + "#{counter}" +"\s left, go ahead and guess again" 
+# 	 user_number = gets.chomp.to_i
 
-else
+# 	end 
+# end 
 	
-	puts "Nope... sorry you now only have\s" + "#{counter}" +"\s left, go ahead and guess again"
-	secret_number = gets.chomp.to_i
-
-end 
-end 
-	# puts "you have\s" + "#{counter}" +"\s left"
-	# user_number = gets.chomp
-
-# user_number == secret_number do
 
 
-	# puts "whats your number"
-	# user_number = gets.chomp
-
-
-
-
-
-
-
-# while counter >=0<3
-# 	counter -= 1
-# end 
-# puts "#{counter}"
-
-
-
-# 	puts 
-# if 	endendenduser_number == secret_number
-# 	puts "WoW! How did you know what I was thinking!"
-# else 
-# 	puts ""
-
-
-
-# end 
 
 
 
