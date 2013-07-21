@@ -41,15 +41,12 @@ puts "hey\s" +"#{user_name}!\s" + "It's a pleasure to meet you. The game is real
 
 gets
 
-
-
 # setting a variable to the random number variable so we keep the same random generated number throughout
 secret_random_generator = rand(1..10)
 my_secret_number = secret_random_generator
 counter = 3
 puts "you have 3 guesses... whats's your number?"
 user_number = gets.chomp.to_i
-
 
 
 while counter > 0 do 
