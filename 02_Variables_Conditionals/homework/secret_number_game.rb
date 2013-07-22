@@ -36,7 +36,7 @@ rules ="I pick a number between 1-10 inclusively and you have 3 chances to guess
 puts ""
 print "Hey, thanks for swinging by to say hello! I'm Andrew Awesome, please enter your name\nif you would like to hear about my simple number game!"
 
-user_name = gets.capitalize.chomp
+user_name = gets.upcase.chomp
 puts "hey\s" +"#{user_name}!\s" + "It's a pleasure to meet you. The game is really simple.\n"  + "#{rules}\s" + "Press enter whenever you are ready to play"
 
 gets
