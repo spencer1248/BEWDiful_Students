@@ -243,7 +243,7 @@ ex_arrays.rb
 ---
 
 
-##Hases
+##Hashes
 ###Find by key
 
 	ga_markets = {"NYC" => "New York City", "LA" => "Los Angeles", "SYD" => "Sydney", "LDN" => "London"}
@@ -261,7 +261,7 @@ ex_arrays.rb
 ---
 
 
-##Hases
+##Hashes
 ###Setting Values
 
 	user_hash = {}
