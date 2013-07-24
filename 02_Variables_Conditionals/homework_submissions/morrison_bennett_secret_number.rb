@@ -38,18 +38,18 @@
 
 puts `clear`  #Clear the screen.
 
+def get_player_name
+	$player_name = gets.chomp 
+end
+
 puts "Welcome to the SECRET NUMBER game, coded by Bennett."
 puts "First, tell me your name:"
 
-player_name = gets.chomp 
+get_player_name
 
 guesses_left = 3
 
-puts "Hello, #{player_name}"
-puts "The rules of this game are simple:"
-puts "You have #{guesses_left} chances to guess the SECRET NUMBER between 1 and 10."
-puts "Let's begin."
-
+puts "Hello, #{$player_name} \nThe rules of this game are simple: \nYou have #{guesses_left} chances to guess the SECRET NUMBER between 1 and 10. \nLet's begin."
 puts "What's your first guess?"
 
 secret_number = 3 #Hard coded secret number.
@@ -58,7 +58,7 @@ loop do # I went with the loop solution, creating two sequential conditional
 	player_guess = gets.to_i
 	guesses_left -= 1
 	if secret_number == player_guess #This is the first conditional
-		puts "You win, #{player_name}!  Awesome!"
+		puts "You win, #{$player_name}!  Awesome!"
 		break #this ends the loop with a win!
 	elsif secret_number > player_guess 
 		puts "The SECRET NUMBER would never be that low. It's higher than that!"
@@ -70,7 +70,7 @@ loop do # I went with the loop solution, creating two sequential conditional
 	elsif guesses_left == 1
 			puts "Last try!"
 	elsif guesses_left == 0
-			puts "You have no guesses left. You lose, #{player_name}. Better luck next time."
+			puts "You have no guesses left. You lose, #{$player_name}. Better luck next time."
 		break #this ends the loop if there are no guesses left
 	end
 end
