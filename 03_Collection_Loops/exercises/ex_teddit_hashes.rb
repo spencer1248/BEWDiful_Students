@@ -14,4 +14,59 @@
 # Use a loop, so that your program continues to ask a user for stories until they chose to quit. ("Would you like to add another story? Enter 'y' or 'n'")
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
-#
+# stories = {}
+# puts "what is your story?"
+# gets.chomp << new_story
+# stories = "{new_story}"
+
+# stories
+
+
+
+
+
+
+puts "what is the new story?"
+gets.chomp = story.New
+
+def new_story_hash(new_story)
+	new_story = Hash.new
+end 
+
+
+def display_title(title)
+
+	puts "title: #{title}"
+
+end
+
+def display_story(category)
+
+	puts "Category: #{story}"
+end
+
+def display_upvotes(upvotes)
+ 	puts "Upvotes: #{upvotes}"
+
+end 
+
+
+
+title = 'Welcome to Teddit! Everyone\'s favorite!'
+story = "The Cat in the Hat"
+upvotes = 0
+
+
+if story.downcase.include?("cat")
+	upvotes += 5
+elsif story.downcase.include?("bacon")
+	upvotes += 8
+else
+	upvotes
+end
+
+
+
+display_title(title)
+display_story(story)
+display_upvotes(upvotes)
