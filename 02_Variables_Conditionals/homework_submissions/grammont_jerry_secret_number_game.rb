@@ -14,7 +14,7 @@ secret_number = 5
 guesses_left = 3
 
 puts "Take your first guess young Jedi"
-
+ 
 3.times do
 	guess = gets.to_i
 		 guesses_left -= 1
