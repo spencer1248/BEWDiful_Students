@@ -14,6 +14,7 @@
 # Use a loop, so that your program continues to ask a user for stories until they chose to quit. ("Would you like to add another story? Enter 'y' or 'n'")
 # Once the user is finished with entering their stories, use .each to print each story in the stories array. 
 #
+
 # stories = {}
 # puts "what is your story?"
 # gets.chomp << new_story
@@ -21,52 +22,61 @@
 
 # stories
 
+# stories = []
 
+stories = []
 
+stories
+story = {}
 
-
-
-puts "what is the new story?"
-gets.chomp = story.New
-
-def new_story_hash(new_story)
-	new_story = Hash.new
+def get_story_title
+	puts "what is the new story title?"
+	return gets.chomp
 end 
 
+story[:title] = get_story_title
+puts story
 
-def display_title(title)
+=begin
+# title = 'Welcome to Teddit! Everyone\'s favorite!'
+# story = "The Cat in the Hat"
+# upvotes = 0
 
-	puts "title: #{title}"
 
-end
+# stories = Hash.new
 
-def display_story(category)
-
-	puts "Category: #{story}"
-end
-
-def display_upvotes(upvotes)
- 	puts "Upvotes: #{upvotes}"
-
-end 
+# def display_title(title)
 
 
 
-title = 'Welcome to Teddit! Everyone\'s favorite!'
-story = "The Cat in the Hat"
-upvotes = 0
+# # end 
+
+# # def display_story(story)
+
+# #return "Category: #{story}"
+# end
+=end 
+#  def display_upvotes(upvotes)
+
+# return "Upvotes: #{upvotes}"
+
+#  end 
+
+#  stories = "#{display_title(title)}"
+
+# # title = 'Welcome to Teddit! Everyone\'s favorite!'
+# # story = "The Cat in the Hat"
+# # upvotes = 0
 
 
-if story.downcase.include?("cat")
-	upvotes += 5
-elsif story.downcase.include?("bacon")
-	upvotes += 8
-else
-	upvotes
-end
+# if story.downcase.include?("caddt")
+# 	upvotes += 5
+# elsif story.downcase.include?("bacon")
+# 	upvotes += 8
+# else
+# 	upvotes
+# end
+# # puts stories << display_story(story)
 
-
-
-display_title(title)
-display_story(story)
-display_upvotes(upvotes)
+#  # stories << display_title(title) "title: #{title}"
+#  print stories.empty?
