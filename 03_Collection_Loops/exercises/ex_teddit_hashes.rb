@@ -1,7 +1,4 @@
 
-
-
-
 # Step 1: Working with Arrays and Hashes
 
 # Copy your solution from conditional_teddit.rb. 
@@ -22,6 +19,9 @@
 
 
 # method for getting a new story and category
+
+
+
 def prompt_new_story
 	story = {} # do you prefer using story = Hash.new for better reading or other purposes?  please share  your thoughts
 	puts "What is the title of your new story?"
@@ -33,7 +33,7 @@ def prompt_new_story
 end 
 
 
-#this calls prompt_new_story and based on the title will calculate new upvotes value and story title, category, and upvotes
+#this calls prompt_new_story and based on the title will calculate new upvotes value and story title, category, and upvotes and return the latest hash
 def get_upvote_value
 	story = prompt_new_story
 	story[:upvotes] = 0
@@ -43,19 +43,41 @@ def get_upvote_value
 		story[:upvotes] += 10
 	else story[:upvotes] = 0
 	end 
-	return story
+	return story 
 end 
 
-#gives us the new story hash
-def new_story_hash
-story_hash = get_upvote_value
-# new_story = {New story Added!!!: "#{story[:title]}", Category: "#{story[:category]}", Upvotes: "#{story[:upvotes]}"}
-print story_hash
-end
+def display_new_story
+story = get_upvote_value
+print " New Story Added! #{story[:title]}, Category: #{story[:category]}, Upvotes: #{story[:upvotes]} "
+end 
 
-#this will call new_story_hash which will run prompt_new_story getting the new title and category and will also run get_upvote_value
-#and return this into a hash
-new_story_hash
+display_new_story
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #this will call new_story_hash which will run prompt_new_story getting the new title and category and will also run get_upvote_value
+# #and return this into a hash
+# # new_story_hash
+
+
+# def display_new_story
+# 	new_story = new_story_hash
+# 	# return new_story
+# 	print new_story[:title]
+# end 
+
+# display_new_story
 
 
 
