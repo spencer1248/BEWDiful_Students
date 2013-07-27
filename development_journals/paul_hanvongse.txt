@@ -11,3 +11,7 @@ http://apiwat.co/code/bewd-day-2/
 Day 3:
 
 http://apiwat.co/code/bewd-day-3/
+
+Day 4:
+
+http://apiwat.co/code/bewd-day-4/
