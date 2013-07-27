@@ -6,7 +6,7 @@
 
 # Copy your solution from conditional_teddit.rb. 
 # Create an empty stories array. This will be used to hold all stories we capture.
-# Users enter the story as they do now, but it gets put in a hash instead. 
+# # Users enter the story as they do now, but it gets put in a hash instead. 
 # Update any reference to the story (upvotes, category and title) 
 # Your story hash should look like the one below: 
 # { title: "Monkeys thank mayor for flounder tooth necklace", category: "Teeth", upvotes: 1 }
@@ -20,37 +20,42 @@
 #
 
 
-# def display_new_story(title, category, upvotes)
-# puts "Title #{title}, Category: #{category}, Upvotes: #{upvotes}"
-# end 
 
 # method for getting a new story and category
 def prompt_new_story
-	story = {}
+	story = {} # do you prefer using story = Hash.new for better reading or other purposes?  please share  your thoughts
 	puts "What is the title of your new story?"
 	story[:title] = gets.chomp.to_s
 	puts "What category does your story fall under?"
-	story[:category] = gets.chomp.to_s
-	story = { :title => story[:title], :category => story[:category] } 
+	story[:category] = gets.chomp.to_s  # do I need to use the .to_s method here?  I think that gets.chomp will automatically make it a string, right?
+	# story = { :title => story[:title], :category => story[:category] } # this is what return story knows. 
     return story
 end 
 
 
-# prompt_new_story = Hash.new
-# story = prompt_new_story
-# print story.values	
-
+#this calls prompt_new_story and based on the title will calculate new upvotes value and story title, category, and upvotes
 def get_upvote_value
 	story = prompt_new_story
 	story[:upvotes] = 0
-	if story[:title].include? "hey"
+	if story[:title].downcase.include? "hey"
 		story[:upvotes] += 5
+	elsif story[:title].downcase.include? "bacon"
+		story[:upvotes] += 10
 	else story[:upvotes] = 0
 	end 
-	print story
+	return story
 end 
 
-get_upvote_value
+#gives us the new story hash
+def new_story_hash
+story_hash = get_upvote_value
+# new_story = {New story Added!!!: "#{story[:title]}", Category: "#{story[:category]}", Upvotes: "#{story[:upvotes]}"}
+print story_hash
+end
+
+#this will call new_story_hash which will run prompt_new_story getting the new title and category and will also run get_upvote_value
+#and return this into a hash
+new_story_hash
 
 
 
@@ -63,24 +68,3 @@ get_upvote_value
 
 
 
-
-#{story[:title]}, category: #{story[:category]}, upvotes: #{story[:upvotes]}")
-# end 
-
-# display_new_story(hey, you, guys)
-
-# def calculate_upvotes
-
-
-# binding.pry
-
-
-# new_story_title = prompt_new_story
-# puts new_story_title
-# #method for displaying new story title
-
-# def display_new_title(new_story_title)
-# puts "#{new_story_title}"
-# end 
-
-# ###display_new_title
