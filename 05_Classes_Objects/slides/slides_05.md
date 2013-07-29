@@ -145,22 +145,6 @@ attr_accessor : Makes variables available outside the class.
 ---
 
 
-##Scope
-###Method Scope
-
-
-	batman = "Dark Knight and Gotham Crime Fighter"
-	
-	def batman.secret
-		puts "He's Billionaire Bruce Wayne"
-	end
-
-	batman #=> Dark Knight and Gotham Crime Fighter
-	batman.secret #=> He's Billionaire Bruce Wayne
-	
----
-
-
 
 ##Method Scope
 ###Class Methods
