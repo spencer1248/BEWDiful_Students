@@ -1,12 +1,13 @@
 ![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Exercise_icon_md.png)
 
-## Practice Makes Perfect!
+## Practice Makes Perfect
+
 
 
 | | |
 | ------------- |:-------------|
-| __Topics__ | variables, programming arithmetic, strings, conditionals, loops, data type conversion, strings, interpolation. | 
-| __Description__| Do these exercises in your spare time. The solution file is there for you to check your answers. These exercises will not be graded.|    
+| __Topics__ | arryas, hashes, times loops, do loop, apis | 
+| __Description__| No new exercises yet. Complete previous exercises if you haven't already.|    
  
 
 
