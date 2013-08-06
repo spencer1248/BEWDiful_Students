@@ -21,6 +21,17 @@ def show_menu
   show_message "3. Exit"
 end
 
+# def calculate_upvotes(story)
+#   story.upvote
+#   # #StoryBoard.stories.each do |story|
+#   #  # if story.title.include?("cat")
+#   #   #  story.upvote
+#   #   #else
+#   #     story.downvote
+#   #   end
+#   # end
+# end
+
 def add_remote_stories
   RemoteSource.get.each do |story|
     StoryBoard.add_story story #adds story to an array of stories.
@@ -49,10 +60,12 @@ loop do
   choice = get_choice
   if choice == 1
     add_remote_stories
+    #calculate_upvotes
     show_story_board
     show_menu
   elsif choice == 2
     add_manual_stories
+    #calculate_upvotes
     show_story_board
     show_menu
   elsif choice ==  3 
