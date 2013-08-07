@@ -2,8 +2,6 @@
 
 #BEWD - Routes, Controllers & Views
 
-###Instructor Name
-
 ---
 
 
