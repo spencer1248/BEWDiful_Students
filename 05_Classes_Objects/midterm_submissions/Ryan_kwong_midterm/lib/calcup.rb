@@ -5,7 +5,7 @@ class CalcUp
 
     if %w(miami heat boston celtics dallas mavericks houston rockets 
     	clippers cleveland cavaliers).any? {|str| (title + category).downcase.include? str}
-     upvotes *= 0
+     upvotes *= -1000
 
     elsif %w(york knicks brooklyn nets san antonio spurs
     	lakers golden state warriors indiana pacers oklahoma 
