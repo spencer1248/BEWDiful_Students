@@ -1,3 +1,5 @@
+#James Naadjie-Midterm Project
+#Main object which runs application
 require_relative 'lib/story_board' #creates a link to the StoryBoard class.
 require_relative 'lib/interface_manager' #creates link to InterfaceManager class
 

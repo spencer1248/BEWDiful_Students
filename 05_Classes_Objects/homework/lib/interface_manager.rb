@@ -1,3 +1,5 @@
+#James Naadjie-Midterm Project
+#Describes the InterfaceManager which is responsible for all user interactions with the applications
 class InterfaceManager
 
 	def initialize

@@ -1,3 +1,5 @@
+#James Naadjie-Midterm Project
+#describes RemoteSource class, which is responsible for getting news from Remote API's
 require 'json'
 require 'rest-client'
 require_relative 'story' #creates a link to the Story class.
