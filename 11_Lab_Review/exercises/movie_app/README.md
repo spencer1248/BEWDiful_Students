@@ -12,8 +12,6 @@ They want an application that allows visitors to:
 *	Edit a movie in the database. 
 *	And search for a specific movie.
 
-We will build a Rails app for RetFlix during lesson 9 & 10. Each lesson we will add more functionality to the app. 
-
 Paring is Sharing, and happy coding :)
 
 
@@ -25,14 +23,11 @@ Paring is Sharing, and happy coding :)
 *	Create a search box that will search for a term in the title, description and the year released fields.
 *	Display results in the search.html.erb pages.
 
-
-##Lab Time - Create & Edit Movie Forms
-####Time: Due Lesson 11
-
+## Update
 ###Task Instructions
 
-*	Update routes file to use :resources
-*	Add a link to show just the movie that was clicked
+*	Update routes file to use "resources" method
+*	Add a link to show just the movie that was clicked (the show action)
 *	Build form for adding a new movie
 *	Add validations to the Movie model
 	*	All titles and descriptions must be present
@@ -48,7 +43,7 @@ __Best Practices__
 *	Keep code DRY: Create partials so you can reuse code. 
 *	Move all complex data queries to the model
 
-_Note:_ This application is due lesson 11. 
+_Note:_ This application is due lesson 13. 
 
 
 
