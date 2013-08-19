@@ -22,8 +22,3 @@ SCHEDULE
 | 60 min | Ritly | [Ritly](exercises/README.md) | We are not giving students step by step directions in this lab, instead lets challenge them to use what they know about Rails and Ruby to create an app. These exercises are difficult because it will be the first apps students create with minimal direction.|
 
 
-
-HOMEWORK
---------
-
-Complete Ritly, due class 13
