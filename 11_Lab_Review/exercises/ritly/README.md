@@ -3,7 +3,6 @@
 Time to review. You now have all the necessary knowledge to build a small Rails app. Let's build!
 
 #Ritly
-####Time: 60 min
 
 We are going to build an app similar to [Bitly](https://bitly.com), called Ritly. The challenge is going to be understanding the flow of control in a Rails app.
  
