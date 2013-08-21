@@ -1,0 +1,20 @@
+<ol>
+<% @movies.each do |movie| %>
+  <li>
+    <%= link_to movie_path(movie) do %>
+      <p>
+        <%= movie.title %>
+      </p>
+      <p>
+        <%= movie.description %>
+      </p>
+      <p>
+        <%= movie.year_released %>
+      </p>
+      <p>
+        <%= @movie.rating %>
+      </p>
+    <% end %>
+  </li>
+<% end %>
+</ol>
