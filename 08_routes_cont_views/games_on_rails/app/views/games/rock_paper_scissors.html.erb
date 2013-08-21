@@ -1,0 +1,4 @@
+<h1> Rock paper Scissors </h1>
+<% @pieces.each do |piece| %>
+<%= link_to piece, rock_paper_scissors_play_path(piece) %>
+<% end %>
