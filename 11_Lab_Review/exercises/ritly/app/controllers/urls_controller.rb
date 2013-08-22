@@ -10,7 +10,6 @@ class UrlsController < ApplicationController
 
   def create
   	@url = Url.new(url_params)
-  	# @url.hash_code = rand(100000)
   	if @url.save
   		redirect_to url_path(@url)
   	else
