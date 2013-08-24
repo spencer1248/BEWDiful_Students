@@ -3720,3 +3720,47 @@ Processing by ShirtsController#show as HTML
   [1m[36mShirt Load (0.2ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "5"]]
   Rendered shirts/show.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-19 14:32:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 37ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shirts" for 127.0.0.1 at 2013-08-19 14:33:06 -0400
+Processing by ShirtsController#index as HTML
+  [1m[35mShirt Load (0.2ms)[0m  SELECT "shirts".* FROM "shirts"
+  Rendered shirts/_shirts_list.html.erb (26.4ms)
+  Rendered shirts/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 433ms (Views: 428.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-19 14:33:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-19 14:33:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-19 14:33:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-19 14:33:07 -0400
+
+
+Started GET "/shirts/3" for 127.0.0.1 at 2013-08-19 14:33:16 -0400
+Processing by ShirtsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShirt Load (0.4ms)[0m  [1mSELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered shirts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/shirts/3/edit" for 127.0.0.1 at 2013-08-19 14:33:17 -0400
+Processing by ShirtsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShirt Load (0.1ms)[0m  SELECT "shirts".* FROM "shirts" WHERE "shirts"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered shirts/_form.html.erb (15.3ms)
+  Rendered shirts/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.1ms)
