@@ -1,0 +1,20 @@
+<h1> Welcome to Ritly: Your Urls randomly generated </h1>
+
+<p> Click on the following to generate a random code:
+	<%= link_to 'Show', url_path(@urls) %>
+</p>
+
+<%= render partial: 'form' %>
+
+<%= form_tag urls_search_path, method: :get do %>   <!-- another rails helper -->
+	<%= label_tag(:hash_code, "Search for:") %>
+  <%= text_field_tag(:hash_code) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
+<%= render partial: 'list' %>
+
+
+
+

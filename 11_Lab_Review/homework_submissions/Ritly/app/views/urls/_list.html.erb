@@ -1,0 +1,22 @@
+
+
+<ol>
+	<% @urls.each do |url| %>
+			<li>
+				<%= link_to urls_path(url) do %>
+				<p>
+					Link: <%= url.link %>
+				</p>
+				<p>
+					Hash Code: <%= url.hash_code %>
+				</p>
+				<p>
+					Created at: <%= url.created_at %>
+				</p>
+				<p>
+					Url ID: <%= url.id %>
+				</p>
+				<% end %>
+			</li>
+		<% end %>
+	</ol>
