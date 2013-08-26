@@ -42,10 +42,3 @@ __Best Practices__
 
 *	Keep code DRY: Create partials so you can reuse code. 
 *	Move all complex data queries to the model
-
-_Note:_ This application is due lesson 13. 
-
-
-
-
-	
