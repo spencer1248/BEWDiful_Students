@@ -14,5 +14,5 @@ describe Player do
   it {should respond_to(:date_of_birth)}
   it {should respond_to(:place_of_birth)}
 
-
+  
 end

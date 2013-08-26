@@ -6,9 +6,18 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-<%= yield %>
-
+<div class="container">
+  <div class="top">
+    <div class="w-container heading">
+      <h1 class="title">RiTLY</h1>
+    </div>
+  </div>
+  <div class="content">
+    <%= yield %>
+  </div>
+  </div>
 </body>
+
 </html>

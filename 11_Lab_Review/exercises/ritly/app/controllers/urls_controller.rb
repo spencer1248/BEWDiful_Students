@@ -10,7 +10,7 @@ class UrlsController < ApplicationController
 
   def create
   	@url = Url.new(url_params)
-  	if @url.save
+  	if @url.generate_with_hash
   		redirect_to url_path(@url)
   	else
   		render :new
@@ -33,13 +33,8 @@ class UrlsController < ApplicationController
   end
 
   def generated_code_value
-  	@generated_code = params[:some_totally_random_value]
-  	@url = Url.find_by_hash_code(@generated_code)
+  	generated_code = params[:some_totally_random_value]
+  	@url = Url.find_by_hash_code(generated_code)
   end
-
-  #  def click_count
-  # 	generated_code_value
-  	
-  # end
 
 end

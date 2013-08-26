@@ -11,3 +11,93 @@
  *= require_self
  *= require_tree .
  */
+body {
+  background-color: #e04352;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+}
+h1 {
+  margin: 10px 0px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.top {
+  height: 129px;
+}
+.title {
+  display: block;
+  margin-left: auto;
+  padding-left: 0px;
+  border-style: solid;
+  border-width: 0px 0px 3px;
+  border-color: #736b6b;
+  font-size: 50px;
+  text-shadow: black 3px 3px 6px;
+}
+.content {
+  height: 500px;
+}
+.url-box {
+  height: 116px;
+  margin-top: 175px;
+}
+.shorten-url {
+  width: 90px;
+  height: 28px;
+  float: left;
+  background-color: orange;
+  text-shadow: black 1px 1px 6px;
+}
+.url-text-box {
+  width: 800px;
+  height: 20px;
+  float: left;
+}

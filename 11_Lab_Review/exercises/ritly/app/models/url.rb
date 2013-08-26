@@ -1,11 +1,6 @@
 class Url < ActiveRecord::Base
-	
-before_create :create_hash_code
 
-
-
-private
-	def create_hash_code
-		self.hash_code = SecureRandom.urlsafe_base64(4)
+	def generate_with_hash
+		self.hash_code = HashGenerator.create(self)
 	end
 end

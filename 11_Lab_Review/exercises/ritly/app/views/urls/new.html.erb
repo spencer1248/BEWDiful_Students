@@ -1,4 +1,7 @@
+<div class="w-container url-box">
 <%= form_for(@url) do |f| %>
+	<div id="form">
 	<%= render 'shared/form', f: f %>
-	<%= f.submit "shorten link" %>
+	<%= f.submit "Shorten Url", class: "w-button shorten-url" %>
+	</div>
 <% end %>
