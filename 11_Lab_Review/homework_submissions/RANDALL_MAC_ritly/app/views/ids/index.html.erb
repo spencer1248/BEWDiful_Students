@@ -1,0 +1,34 @@
+<div id="content">
+<h1>Welcome to Ritly! Enter your URL below.</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Hashcode</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ids.each do |id| %>
+      <tr>
+        <td><%= id.url %></td>
+        <td><%= id.hashcode %></td>
+        <td><%= id.created %></td>
+        <td><%= id.updated %></td>
+        <td><%= link_to 'Show', id %></td>
+        <td><%= link_to 'Edit', edit_id_path(id) %></td>
+        <td><%= link_to 'Destroy', id, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Id', new_id_path %>
