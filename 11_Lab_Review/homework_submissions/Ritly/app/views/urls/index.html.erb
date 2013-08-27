@@ -1,0 +1,21 @@
+<h1> Welcome to Ritly: URL shortener </h1>
+
+<p> To shorten your URL, click here:
+	<%= link_to 'Shorten', url_path(@urls) %>
+</p>
+
+
+
+<%= form_tag urls_search_path, method: :get do %>   <!-- another rails helper -->
+	<%= label_tag(:hash_code, "Hash Code Search:") %>
+  <%= text_field_tag(:hash_code) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
+<p> To <b>Edit</b>, click on each link: </p>
+<%= render partial: 'list' %>
+
+
+
+

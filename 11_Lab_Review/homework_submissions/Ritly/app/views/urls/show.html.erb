@@ -1,0 +1,22 @@
+<h1> Show Page: Random Generated Code </h1>
+
+<p> Your random-code is: </p>
+<%= rand(10000) %>
+<!--- <%= SecureRandom.urlsafe_base64(8) %> -->
+
+<p><b>To visit your URL, go to:</b> </p>
+<p> localhost:3000/random-code </p>
+
+<p><b>To preview your URL, type in:</b></p>
+<p> localhost:3000/random-code/preview </p>
+
+<p><b>To save your Url to the database (Note: include 'http://'):</b> 
+	<%= render partial: 'form' %>
+</p>
+
+
+<p> Back to Index:
+	<%= link_to 'Index', urls_path(@urls) %>
+</p>
+
+
