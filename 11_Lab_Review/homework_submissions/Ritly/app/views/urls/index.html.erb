@@ -1,18 +1,19 @@
-<h1> Welcome to Ritly: Your Urls randomly generated </h1>
+<h1> Welcome to Ritly: URL shortener </h1>
 
-<p> Click on the following to generate a random code:
-	<%= link_to 'Show', url_path(@urls) %>
+<p> To shorten your URL, click here:
+	<%= link_to 'Shorten', url_path(@urls) %>
 </p>
 
-<%= render partial: 'form' %>
+
 
 <%= form_tag urls_search_path, method: :get do %>   <!-- another rails helper -->
-	<%= label_tag(:hash_code, "Search for:") %>
+	<%= label_tag(:hash_code, "Hash Code Search:") %>
   <%= text_field_tag(:hash_code) %>
   <%= submit_tag("Search") %>
 <% end %>
 
 
+<p> To <b>Edit</b>, click on each link: </p>
 <%= render partial: 'list' %>
 
 

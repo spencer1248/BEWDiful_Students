@@ -4,6 +4,8 @@ class UrlsController < ApplicationController
 		@urls = Url.all
 
 		@url = Url.new
+
+		#url.id = redirect_to edit_url_path
 	end
 
 	def search

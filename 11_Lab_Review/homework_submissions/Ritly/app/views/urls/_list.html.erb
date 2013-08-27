@@ -3,7 +3,7 @@
 <ol>
 	<% @urls.each do |url| %>
 			<li>
-				<%= link_to urls_path(url) do %>
+				<%= link_to edit_url_path(url[:id]) do %>
 				<p>
 					Link: <%= url.link %>
 				</p>
