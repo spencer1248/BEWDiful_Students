@@ -3,7 +3,7 @@ class CreatePlayers < ActiveRecord::Migration
     create_table :players do |t|
       t.string 		:first_name
       t.string 		:last_name
-      t.string 		:position
+      t.integer   :jersey_number
       t.string 		:height
       t.string 		:weight
       t.datetime 	:date_of_birth

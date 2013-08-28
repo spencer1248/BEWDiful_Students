@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130823195451) do
+ActiveRecord::Schema.define(version: 20130827174550) do
 
   create_table "players", force: true do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "position"
+    t.integer  "jersey_number"
     t.string   "height"
     t.string   "weight"
     t.datetime "date_of_birth"
@@ -24,5 +24,17 @@ ActiveRecord::Schema.define(version: 20130823195451) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "positions", force: true do |t|
+    t.string   "goal_keeper"
+    t.string   "defender"
+    t.string   "midfielder"
+    t.string   "forward"
+    t.integer  "player_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "positions", ["player_id"], name: "index_positions_on_player_id"
 
 end

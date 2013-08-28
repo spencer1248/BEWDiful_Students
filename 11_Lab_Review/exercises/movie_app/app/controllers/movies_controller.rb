@@ -11,11 +11,16 @@ class MoviesController < ApplicationController
 
   def new
   	@movie = Movie.new
+    @movie.tags.build
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def create
-    @movie = Movie.new(movie_params)
-    @movie.user_id = current_user.id
+    @movie = current_user.movies.new(movie_params)
+    # @movie.user_id = current_user.id
     if @movie.save
       redirect_to @movie
       flash[:notice] = "Movie successfully added"
@@ -34,6 +39,7 @@ class MoviesController < ApplicationController
   end
 
   def update
+    @movie = Movie.find(params[:id])
     if @movie.update(movie_params)
       redirect_to @movie
     else
@@ -54,6 +60,6 @@ class MoviesController < ApplicationController
     # end
 
     def movie_params
-      params.require(:movie).permit(:title, :description, :year_released, :rating)
+      params.require(:movie).permit(:title, :description, :year_released, :rating, tags_attributes: [:id, :value])
    end
 end

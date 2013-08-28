@@ -239,6 +239,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   meta_request
+  nokogiri (~> 1.6.0)
   rails (= 4.0.0)
   rest-client
   rspec-rails (~> 2.0)

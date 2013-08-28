@@ -1,4 +1,12 @@
 <h1>Title: <%= @movie.title %> </h1>
 <h1>Description: <%= @movie.description %> </h1>
+<ul>
+<h3> Tags </h3>
+<% @movie.tags.each do |tag| %>
+	<li><%= tag.value %></li>
+	</ul>
+	<% end %>
+
 <%= link_to "edit movie", edit_movie_path(@movie) %>
+<%= link_to "Return to movies", root_path %>
 
