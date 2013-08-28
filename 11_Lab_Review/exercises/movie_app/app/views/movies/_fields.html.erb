@@ -1,0 +1,23 @@
+<div>
+<%= f.label :title %>
+<%= f.text_field :title, placeholder: "required" %>
+</div>
+<div>
+<%= f.label :description %>
+<%= f.text_field :description, placeholder: "required" %>
+</div>
+<div>
+<%= f.label :year_released, "Release Date" %>
+<%= f.datetime_field :year_released, placeholder: "required" %>
+</div>
+<div>
+<%= f.label :rating, "Rating" %>
+<%= f.text_field :rating, placeholder: "required" %>
+</div>
+<div>
+ <%= f.fields_for :tags do |movie_tag| %>
+ 	<%= movie_tag.label :tags %>
+   <%= movie_tag.text_field :value %>
+   </div>
+ <% end %>
+  
