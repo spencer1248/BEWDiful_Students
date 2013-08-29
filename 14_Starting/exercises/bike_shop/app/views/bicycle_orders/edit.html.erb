@@ -4,5 +4,9 @@ Edit Order
 	<%= f.label :name %>
 	<%= f.text_field :name %>
 	</div>
-	<%= f.submit "Create Order" %>
+	<div>
+	<%= f.label   :wheel_set %>
+	<%= f.select  :wheel_set_id, @wheel_sets.map { |wheel| [wheel.name, wheel.id]}, include_blank: "Default" %>
+</div>
+	<%= f.submit "Update Order" %>
 	<% end %>

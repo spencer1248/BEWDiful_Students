@@ -1,0 +1,17 @@
+<table border="1">
+<tbody>
+<tr>
+<th> Order Name</th>
+<th> Wheel Set</th>
+</tr>
+<tr>
+<% @bicycle_orders.each do |bo| %>
+	<td><%= bo.name %></td>
+	<% if bo.wheel_set %>
+	<td><%= bo.wheel_set.name %></td>
+	<% end %>
+	</tr>
+	<% end %>
+
+	</tbody>
+</table>

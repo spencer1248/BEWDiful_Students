@@ -4,6 +4,7 @@
 	<li><%= msg %></li>
 	<% end %>
 <% end %>
+<div>
 <%= form_for @movie, remote: true do  |f| %>
 	<%= render 'fields', f: f %>
   <%= f.submit "Add new movie" %>
