@@ -1,0 +1,17 @@
+<h1><%= @movie.title %></h1>
+<p><%= @movie.description %></p>
+
+<% @movie.comments.each do |comment| %>
+  <p>Posted by: <%= comment.user.email %></p>
+  <p><%= comment.comment_text %></p>
+<% end %>
+
+<%= form_for [@movie, @comment] do |f| %>
+  <%= f.label :comment_text %>
+  <%= f.text_area :comment_text %>
+  <%= f.submit %>
+<% end %>
+
+<% if user_signed_in? %>
+  <%= link_to "Edit", edit_movie_path(@movie) %>
+<% end %>
