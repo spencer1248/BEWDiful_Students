@@ -1,4 +1,6 @@
 BikeShop::Application.routes.draw do
+  get "bicycle_orders/new"
+  resources :bicycle_orders
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
