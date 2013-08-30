@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130827174550) do
+ActiveRecord::Schema.define(version: 20130830160847) do
+
+  create_table "clubs", force: true do |t|
+    t.string   "name"
+    t.string   "manager"
+    t.string   "stadium"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pinboards", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "players", force: true do |t|
     t.string   "first_name"
@@ -21,20 +36,19 @@ ActiveRecord::Schema.define(version: 20130827174550) do
     t.string   "weight"
     t.datetime "date_of_birth"
     t.string   "place_of_birth"
+    t.integer  "position_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "club_id"
   end
+
+  add_index "players", ["club_id"], name: "index_players_on_club_id"
+  add_index "players", ["position_id"], name: "index_players_on_position_id"
 
   create_table "positions", force: true do |t|
-    t.string   "goal_keeper"
-    t.string   "defender"
-    t.string   "midfielder"
-    t.string   "forward"
-    t.integer  "player_id"
+    t.string   "player_position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "positions", ["player_id"], name: "index_positions_on_player_id"
 
 end

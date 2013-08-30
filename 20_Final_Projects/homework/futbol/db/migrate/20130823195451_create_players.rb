@@ -8,7 +8,10 @@ class CreatePlayers < ActiveRecord::Migration
       t.string 		:weight
       t.datetime 	:date_of_birth
       t.string		:place_of_birth
+      t.integer   :position_id
       t.timestamps
     end
+
+    add_index :players, :position_id
   end
 end
