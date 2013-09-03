@@ -1,0 +1,8 @@
+h1 Dashboard#index
+ul
+- @current_user_pinboards.each do |pinboard|
+  li== pinboard.name
+  - @current_user_pinboard_players.each do |pin|
+   == pin.first_name
+   == pin.last_name
+

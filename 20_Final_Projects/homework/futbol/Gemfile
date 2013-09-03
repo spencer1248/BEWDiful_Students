@@ -7,7 +7,7 @@ group :development, :test do
   gem "devise"
   gem "rspec-rails", '~> 2.0'
   gem "factory_girl_rails"
-  gem "database_cleaner"
+  gem "database_cleaner", "<= 1.0.1"
   gem "email_spec"
   gem "launchy"
   gem "capybara"
@@ -16,7 +16,7 @@ group :development, :test do
   gem 'annotate'
   gem 'meta_request'
   gem 'cucumber-rails', :require => false
-  gem "slim", "~> 2.0.1"
+  gem "slim-rails"
   gem 'selenium-webdriver'
   gem "rest-client"
   gem "nokogiri", "~> 1.6.0"

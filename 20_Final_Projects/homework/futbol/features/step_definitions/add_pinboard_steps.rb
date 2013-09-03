@@ -7,7 +7,7 @@ Given(/^I have no pinboards$/) do
 end
 
 When(/^I add a new pinboard "(.*?)"$/) do |board_name|
-  @user_fan_pinboard = @user_fan.pinboard.new(name: board_name)
+  @user_fan_pinboard = @user_fan.pinboards.new(name: board_name)
 end
 
 When(/^I save it$/) do

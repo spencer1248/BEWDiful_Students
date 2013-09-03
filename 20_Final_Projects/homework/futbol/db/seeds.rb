@@ -6,15 +6,29 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
+def add_user
+	@user = User.create(email: "foo@example.com", password: "gyenyame7", password_confirmation: "gyenyame7")
+end
+
+def create_user_pinboard
+	@user = User.first
+	@user.pinboards.create(name: "Epl", description: "Epl players")
+end
+
+add_user
+create_user_pinboard
+
 clubs = Club.create([{name: "Chelsea", manager: "Jose Mourino", stadium: "Stamfordbridge"}, 
 					   {name: "Arsenal", manager: "Arsen Wenger", stadium: "The Emirates"}, 
 					   {name: "Manchester United", manager: "David Moyes", stadium: "Old Trafford"}])
 
 
-forward_position = Position.create(player_position: "Foward")
-goalkeeper_position = Position.create(player_position: "Goalkeeper")
-midfield_position = Position.create(player_position: "Midfielder")
-defender_position = Position.create(player_position: "Defender")
+["Goalkeeper", "Defender", "Midfielder", "Forward"].each { |position| Position.create(player_position: "#{position}")}
+
+forward_position = Position.find_by_player_position("Forward")
+goalkeeper_position = Position.find_by_player_position("Goalkeeper")
+midfield_position = Position.find_by_player_position("Midfielder")
+defender_position = Position.find_by_player_position("Forward")
 
 chelsea = clubs.first
 player = Player.create([{ first_name:  "Michael", 
