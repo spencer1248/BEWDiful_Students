@@ -1,4 +1,5 @@
 class WheelSet < ActiveRecord::Base
-	has_many :bicycle_orders
-	validates :name, presence: true
+  validates :name, presence: true
+
+  has_many :bicycle_orders
 end

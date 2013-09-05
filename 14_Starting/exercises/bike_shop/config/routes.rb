@@ -1,11 +1,11 @@
 BikeShop::Application.routes.draw do
-  get "bicycle_orders/new"
-  resources :bicycle_orders
+  get "/auth/:twitter/callback", to: "sessions#create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  root "bicycle_orders#index"
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  resources :bicycle_orders
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

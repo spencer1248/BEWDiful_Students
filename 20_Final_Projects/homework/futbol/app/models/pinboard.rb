@@ -17,7 +17,7 @@ class Pinboard < ActiveRecord::Base
 	has_many		:players, through: :pinboard_players
 
 	def pin_player_to_board(player)
-		PinboardPlayer.pin_player(player, self)	
+		PinboardPlayer.pin_player(self, player)	
 	end
 
 	

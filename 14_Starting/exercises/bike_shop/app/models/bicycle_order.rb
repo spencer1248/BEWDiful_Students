@@ -1,4 +1,5 @@
 class BicycleOrder < ActiveRecord::Base
-	belongs_to :wheel_set
-	validates :name, presence: true
+  validates :name, presence: true
+
+  belongs_to :wheel_set
 end

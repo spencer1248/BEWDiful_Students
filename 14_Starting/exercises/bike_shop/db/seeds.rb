@@ -5,4 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-WheelSet.create([{ name: "Big Wheels"}, {name: "Medium WHeels"}, {name: "Small Wheels"}])
+
+WheelSet.create([
+  {
+    name: 'Big Wheels'
+  },
+  {
+    name: 'Medium Wheels'
+  },
+  {
+    name: 'Small Wheels'
+  }
+])

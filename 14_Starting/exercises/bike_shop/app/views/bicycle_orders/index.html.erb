@@ -1,17 +1,8 @@
-<table border="1">
-<tbody>
-<tr>
-<th> Order Name</th>
-<th> Wheel Set</th>
-</tr>
-<tr>
-<% @bicycle_orders.each do |bo| %>
-	<td><%= bo.name %></td>
-	<% if bo.wheel_set %>
-	<td><%= bo.wheel_set.name %></td>
-	<% end %>
-	</tr>
-	<% end %>
-
-	</tbody>
-</table>
+<h1> Bicycle Orders </h1>
+<div>
+<ul>
+<%- @bicycle_orders.each do |order| %>
+  <li> <%= link_to "#{order.name}", edit_bicycle_order_path(order) %></li>
+<% end %>
+  </div>
+<%= link_to "Create New Order", new_bicycle_order_path %>

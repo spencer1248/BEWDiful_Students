@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-BikeShop::Application.config.secret_key_base = '38627363da3e34464039bbcc70193839138bbb40294be268ce52b9ae93bbc18ffef2551bcabd93883684f42375c0c413aeb8c9c288a19056636616001bd7352b'
+BikeShop::Application.config.secret_key_base = '0ad819d720e6236a96624843c2cde4aa2d9f89be67a3fccd20a452877d497621a186009465a83ff300f2f73a7770f519e186cca806e9c7fda4909bba889fd496'

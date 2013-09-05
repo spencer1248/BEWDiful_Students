@@ -1,7 +1,6 @@
 class DashboardController < ApplicationController
   def index
-    @user = User.first
-  	@current_user_pinboards = @user.pinboards.load
-  	@current_user_pinboard_players = @user.pins
+  	@current_user_pinboards = current_user.pinboards.load
+  	#@current_user_pinboard_players = current_user.pins
   end
 end
