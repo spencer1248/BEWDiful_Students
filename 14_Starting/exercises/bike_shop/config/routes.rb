@@ -7,6 +7,8 @@ BikeShop::Application.routes.draw do
   # root 'welcome#index'
   resources :bicycle_orders
 
+  get "signout", to: "sessions#destroy", as: "signout"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

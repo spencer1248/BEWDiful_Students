@@ -1,4 +1,6 @@
 class BicycleOrdersController < ApplicationController
+  before_filter :authenticate_user!, only: [:create, :new]
+
   def index
     @bicycle_orders = BicycleOrder.all
   end

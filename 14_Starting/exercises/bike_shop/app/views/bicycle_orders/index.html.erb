@@ -1,5 +1,10 @@
 <h1> Bicycle Orders </h1>
 <div>
+<% if current_user %>
+	<%= link_to "logout", signout_path %>
+	<% else %>
+	<%= link_to "login with twitter", "auth/twitter" %>
+	<% end %>
 <ul>
 <%- @bicycle_orders.each do |order| %>
   <li> <%= link_to "#{order.name}", edit_bicycle_order_path(order) %></li>

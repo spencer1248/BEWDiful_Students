@@ -35,7 +35,9 @@ Then(/^I should see my pinboard "(.*?)"$/) do |pinboard|
 end
 
 Given(/^I have a pinboard$/) do
-  @pinboard = current_user.pinboards.create!(name: "Defenders", description: "EPl defenders") 
+  @player = Player.new
+  @pinboard = current_user.pinboards.create!(name: "Defenders", description: "EPl defenders")
+  @pinboard.pin_player_to_board(@player)
    # @user = User.create(email: "example@foo.com", password: "password", password_confirmation: "password")
 end
 
@@ -44,8 +46,8 @@ When(/^I visit pinboard page$/) do
 end
 
 Then(/^I should see all my pinned players$/) do
-  page.should have_content("Epl Name")
-  page.should have_content("player name")
+  #page.should have_content(@pinboard.name)
+  page.should have_content(@player.first_name)
   #5.times do
    #   Player.create!(first_name: "Mezit", last_name: "Ozil", jersey_number: "10",
    #                  height: "5'9", weight: "170lbs", date_of_birth: "June 10 1991",
