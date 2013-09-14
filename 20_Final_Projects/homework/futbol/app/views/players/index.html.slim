@@ -1,2 +1,5 @@
 h1 Players#index
-p Find me in app/views/players/index.html.slim
+ul
+  - @players.each do |player|
+   li= player.full_name 
+   = button_to "Pin", new_pinboard_player_path

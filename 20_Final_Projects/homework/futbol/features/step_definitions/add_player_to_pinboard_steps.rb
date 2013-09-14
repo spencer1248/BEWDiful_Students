@@ -3,12 +3,15 @@ Given(/^I have pinboard$/) do
   @pinboard = @user.pinboards.build(name: "Epl", description: "Epl players")
 end
 
-Given(/^There is a player$/) do
-    @player = Player.new
+Given(/^I am on the players index page$/) do
+    @club = FactoryGirl.create(:club)
+    @player = FactoryGirl.create(:player, club: @club)
+    visit players_path
+    page.should have_content("Players")
 end
 
-When(/^I add a player to pinboard$/) do
-    @user.add_player_to_pin_board(@pinboard, @player)
+When(/^I click on "(.*?)"$/) do |pin_player|
+    click_button pin_player
 end
 
 Then(/^My pinboard should include player$/) do

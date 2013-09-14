@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :club do
-    name "MyString"
-    manager "MyString"
-    stadium "MyString"
+    name "Chelsea"
+    manager "Jose Mourinho"
+    stadium "Stamford Bridge"
   end
 end

@@ -1,16 +1,5 @@
-def create_user
-  @user = User.create!(email: "example2@foo.com", password: "password", password_confirmation: "password")
-end
-def current_user
-  if @user.nil?
-    @user = create_user
-  else
-    @user = User.find_by_email("example2@foo.com")
-  end
-end
-
 Given(/^I am a user$/) do
- @user =  current_user
+ @user =  FactoryGirl.create(:user)
     #@user = User.create(email: "example@foo.com", password: "password", password_confirmation: "password")
 end
 
@@ -35,9 +24,12 @@ Then(/^I should see my pinboard "(.*?)"$/) do |pinboard|
 end
 
 Given(/^I have a pinboard$/) do
-  @player = Player.new
-  @pinboard = current_user.pinboards.create!(name: "Defenders", description: "EPl defenders")
+  club = FactoryGirl.create(:club)
+  @player = FactoryGirl.create(:player, club_id: club.id)
+  @player2 = FactoryGirl.create(:player, first_name: "Jordan", club_id: club.id)
+  @pinboard = @user.pinboards.create!(name: "Defenders", description: "EPl defenders")
   @pinboard.pin_player_to_board(@player)
+  @pinboard.pin_player_to_board(@player2)
    # @user = User.create(email: "example@foo.com", password: "password", password_confirmation: "password")
 end
 
@@ -48,6 +40,7 @@ end
 Then(/^I should see all my pinned players$/) do
   #page.should have_content(@pinboard.name)
   page.should have_content(@player.first_name)
+  page.should have_content(@player2.first_name)
   #5.times do
    #   Player.create!(first_name: "Mezit", last_name: "Ozil", jersey_number: "10",
    #                  height: "5'9", weight: "170lbs", date_of_birth: "June 10 1991",

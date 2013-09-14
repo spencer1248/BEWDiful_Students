@@ -4,11 +4,13 @@ Feature: Add a player to pinboard
 
   Background: I am a fan
     Given I am a fan/user
- @add_player
- Scenario: Add player to specified pinboard
+  @add_player
+  @javascript
+  @pause
+ Scenario: Add player to pinboard
     Given I have pinboard
-    And   There is a player
-    When  I add a player to pinboard
+    And   I am on the players index page
+    When  I click on "Pin"
     Then  My pinboard should include player
  
       

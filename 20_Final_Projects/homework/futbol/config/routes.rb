@@ -1,8 +1,9 @@
 Futbol::Application.routes.draw do
-  get "players/index"
+  get "players", to: "players#index"
   get "dashboard/index", to: "dashboard#index"
   devise_for :users
   resources :pinboards
+  resources :pinboard_players, only: [:new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -22,7 +22,18 @@ class Player < ActiveRecord::Base
 	has_many				:pinboard_players
 	has_many				:pinboards, through: :pinboard_players
 
-	validates :first_name, :last_name, :height, :weight, :date_of_birth, presence: true
+	validates :first_name, :last_name, :height, :weight, :date_of_birth, :club, presence: true
 	validates :place_of_birth, presence: true, allow_blank: true
 	validates :jersey_number, numericality: { only_integer: true }
+
+
+	def full_name
+		"#{self.first_name}" + " " + "#{last_name}"
+	end
+
+  def player_age
+    todays_date = Time.now.utc.to_date
+    todays_date.year - self.date_of_birth.year
+    #age = todays_date.year - self.date_of_birth.year
+  end
 end
