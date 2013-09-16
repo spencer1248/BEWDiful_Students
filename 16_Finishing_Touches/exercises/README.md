@@ -59,7 +59,7 @@ __Views__
 
 *	classifieds/new.html.erb allows authenticated users to post a new classified.
 
-*	classifieds/show.html.erb displays the title, price, description and category for a specific classified. In addition users can click contact seller to email users.
+*	classifieds/show.html.erb displays the title, price, description and category for a specific classified.
 
 *	welcome/index.html.erb lists all categories in the database. 
 	*	Bonus: In addition to listing all categories, list the 5 most recent classifieds for each category.
