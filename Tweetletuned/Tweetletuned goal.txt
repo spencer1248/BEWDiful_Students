@@ -1,0 +1,4 @@
+GOAL: An app that will use the Twitter API to show the 10 most recent tweets about Radiohead, Queens of the Stone Age, or Nine Inch Nails, depending on the user's preference. 
+
+
+url --get 'https://api.twitter.com/1.1/search/tweets.json' --data 'count=10&q=radiohead' --header 'Authorization: OAuth oauth_consumer_key="fRrfHpHEcpfGWYDzG6164g", oauth_nonce="a13125da8d84e171054bb8cd50db49ca", oauth_signature="r2d%2F%2BOqM0VL15NXIQHCpwByxI%2FA%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1375735825", oauth_token="233792521-m1Fn5rZL66g9a6Iv22FgwiSi2PbcrBcL3whzmeAV", oauth_version="1.0"' --verbose
