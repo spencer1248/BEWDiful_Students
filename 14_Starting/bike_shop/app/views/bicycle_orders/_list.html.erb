@@ -1,0 +1,5 @@
+<% @bicycle_orders.each do |bicycle_order| %>
+  <section>
+    <header><%= link_to bicycle_order.name, wheel_set.name, wheel_set.id %></header>
+  </section>
+<% end %>
