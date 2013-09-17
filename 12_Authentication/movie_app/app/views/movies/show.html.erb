@@ -1,8 +1,10 @@
 <h1>Movie</h1>
 
-<p>
-  <%= link_to 'Edit', edit_movie_path(@movie) %>
-</p>
+<%if user_signed_in? %>
+	<p>
+  	<%= link_to 'Edit', edit_movie_path(@movie) %>
+	</p>
+<% end %>
 
 <p>
   <%= @movie.title %>
@@ -16,5 +18,9 @@
 <p>
   <%= @movie.rating %>
 </p>
+<p>
+  <%= @movie.user_id %>
+</p>
 
 <%= link_to 'Back', movies_path %>
+

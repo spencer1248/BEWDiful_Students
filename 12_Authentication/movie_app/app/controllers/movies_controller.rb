@@ -1,4 +1,8 @@
 class MoviesController < ApplicationController
+  before_action :find_movie, only: [:update, :edit, :show]
+
+  before_filter :authenticate_user!, only: [:edit]
+
 
 def index
 	@movies = Movie.all 
@@ -58,8 +62,10 @@ def search
   private
 
   def movie_params
-    params.require(:movie).permit(:title, :description, :year_released, :rating)
+    params.require(:movie).permit(:title, :description, :year_released, :rating, :user_id)
   end
 end
+
+
 
 

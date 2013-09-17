@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20130821235952) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "rating"
+    t.integer  "user_id"
   end
 
   create_table "shirts", force: true do |t|
