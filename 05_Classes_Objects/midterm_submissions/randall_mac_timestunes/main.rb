@@ -7,4 +7,4 @@ class Main
 	end
 end
 
-Main.new
+# Main.new

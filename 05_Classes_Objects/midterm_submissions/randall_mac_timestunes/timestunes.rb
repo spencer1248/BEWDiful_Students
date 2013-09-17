@@ -22,7 +22,7 @@ require_relative 'new_stories'
        show_message "Would you like to:"
        show_message "1. Find stories that mention Radiohead"
        show_message "2. Find stories that mention Queens of the Stone Age"
-       show_message "3. Find tweets that mention Nine Inch Nails"
+       show_message "3. Find stories that mention Nine Inch Nails"
        show_message "4. Find stories that mention another band"
        show_message "5. Compose your own story"
        show_message "6. Exit"
@@ -59,7 +59,7 @@ require_relative 'new_stories'
     end
 
     def show_new_stories
-       NewStories.stories.each do |story|
+      NewStories.stories.each do |story|
        show_message story 
      end
     end
@@ -68,6 +68,7 @@ require_relative 'new_stories'
    show_menu
    loop do
    choice = get_choice
+   NewStories.clear
    if choice == 1
     add_radiohead_stories
     show_new_stories
@@ -82,7 +83,7 @@ require_relative 'new_stories'
   	show_menu
    elsif choice == 4
   	show_message "Sorry, this is a fake option."
-  	show_menu
+  	show_menu 
    elsif choice == 5
     add_new_story
     show_new_stories

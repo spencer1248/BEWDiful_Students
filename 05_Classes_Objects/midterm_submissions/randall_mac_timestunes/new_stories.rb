@@ -3,6 +3,9 @@ class NewStories
   def self.add_story(story)
     @@stories << story
   end
+  def self.clear
+  	@@stories = []
+  end
 
   def self.stories
     @@stories.map do |story|

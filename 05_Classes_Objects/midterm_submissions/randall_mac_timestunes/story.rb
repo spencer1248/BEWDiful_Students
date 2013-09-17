@@ -5,7 +5,7 @@ class Story
     @story = story
     @byline = byline
     @date = date
-    @url = url
+    @url = url 
   end
 
 end
