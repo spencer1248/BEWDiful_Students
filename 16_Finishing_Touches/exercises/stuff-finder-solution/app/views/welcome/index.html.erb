@@ -1,0 +1,20 @@
+<h1>Stuff Finder!</h1>
+<div class="hero-unit">
+  <p>Your place for finding stuff you want, and dumping stuff you don't</p>
+</div>
+<%= link_to "Create a new classified!", new_classified_path %>
+<section>
+  <% @categories.each do |category| %>
+    <article>
+      <section>
+        <header>
+          <% category.recent_classifieds.each do |classified| %>
+          </header>
+          <article>
+            <%= link_to "#{truncate(classified.title)} - #{classified.price}", classified %>
+          </article>
+        <% end %>
+      </section>
+    </article>
+  <% end %>
+</section>
