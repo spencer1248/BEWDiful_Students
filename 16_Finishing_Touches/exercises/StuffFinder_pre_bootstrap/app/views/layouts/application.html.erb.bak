@@ -1,29 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>StuffFinder</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <%= link_to "Stuff Finder", root_path %>
-    <% if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path %> | <%= link_to "Sign in", new_user_session_path %>
-    <% end %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-
-    <%= yield %>
-
-  </body>
-</html>
- -->
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -74,18 +49,9 @@
           <a class="brand" href="#">StuffFinder</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <% if user_signed_in? %>
-                <li>
-                  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-                </li>
-              <% else %>
-                <li>
-                  <%= link_to "Sign up", new_user_registration_path %>
-                </li>
-                <li>
-                  <%= link_to "Sign in", new_user_session_path %>
-                </li>
-              <% end %>
+              <li><%= link_to "Link1", "/path1"  %></li>
+              <li><%= link_to "Link2", "/path2"  %></li>
+              <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -94,6 +60,16 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Sidebar</li>
+              <li><%= link_to "Link1", "/path1"  %></li>
+              <li><%= link_to "Link2", "/path2"  %></li>
+              <li><%= link_to "Link3", "/path3"  %></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
         <div class="span9">
           <%= bootstrap_flash %>
           <%= yield %>

@@ -5,11 +5,13 @@
   <% @categories.each do |category| %>
     <article>
       <section>
+                <header>
         <%= link_to category.name, category %>
-        <header>
+                  </header>
+
           <% category.recent_classifieds.each do |classified| %>
-          </header>
-          <article>
+
+          <article class="well">
             <%= link_to "#{truncate(classified.title)} - #{classified.price}", classified %>
           </article>
         <% end %>
