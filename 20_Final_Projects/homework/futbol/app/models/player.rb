@@ -22,9 +22,9 @@ class Player < ActiveRecord::Base
 	has_many				:pinboard_players
 	has_many				:pinboards, through: :pinboard_players
 
-	validates :first_name, :last_name, :height, :weight, :date_of_birth, :club, presence: true
-	validates :place_of_birth, presence: true, allow_blank: true
-	validates :jersey_number, numericality: { only_integer: true }
+	# validates :first_name, :last_name, :height, :weight, :date_of_birth, :club, presence: true
+	# validates :place_of_birth, presence: true, allow_blank: true
+	# validates :jersey_number, numericality: { only_integer: true }
 
 
 	def full_name

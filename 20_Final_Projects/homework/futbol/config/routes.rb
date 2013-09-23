@@ -1,6 +1,7 @@
 Futbol::Application.routes.draw do
   get "players", to: "players#index"
-  get "dashboard/index", to: "dashboard#index"
+  get "dashboard", to: "dashboard#index"
+  get "pin_player", to: "pinboard_players#new"
   devise_for :users
   resources :pinboards
   resources :pinboard_players, only: [:new, :create, :destroy]

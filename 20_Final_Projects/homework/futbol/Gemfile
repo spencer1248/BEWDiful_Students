@@ -20,8 +20,18 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem "rest-client"
   gem "nokogiri", "~> 1.6.0"
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+  gem 'mechanize'
+  gem 'carrierwave'
+  gem "rmagick"
 end
 # Use sqlite3 as the database for Active Record
+group :production do
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git' 
+  gem 'carrierwave'
+  gem "rmagick"
+end
+
 gem 'sqlite3'
 
 # Use SCSS for stylesheets

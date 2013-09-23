@@ -9,6 +9,7 @@ Feature: Add a player to pinboard
   @pause
  Scenario: Add player to pinboard
     Given I have pinboard
+    And   I am signed in
     And   I am on the players index page
     When  I click on "Pin"
     Then  My pinboard should include player

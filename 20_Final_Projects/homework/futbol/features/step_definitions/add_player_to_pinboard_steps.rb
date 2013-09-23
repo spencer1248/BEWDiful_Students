@@ -11,7 +11,7 @@ Given(/^I am on the players index page$/) do
 end
 
 When(/^I click on "(.*?)"$/) do |pin_player|
-    click_button pin_player
+    click_link pin_player
 end
 
 Then(/^My pinboard should include player$/) do
