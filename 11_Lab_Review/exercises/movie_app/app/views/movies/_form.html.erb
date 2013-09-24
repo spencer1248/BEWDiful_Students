@@ -1,0 +1,13 @@
+<div class="add_movie_form">
+<% if @movie.errors.any? %>
+<% @movie.errors.full_messages.each do |msg| %>
+	<li><%= msg %></li>
+	<% end %>
+<% end %>
+<div>
+<%= form_for @movie, remote: true do  |f| %>
+	<%= render 'fields', f: f %>
+  <%= f.submit "Add new movie" %>
+  <% end %>
+ <%= link_to "Return to movies", root_path %>
+</div>
