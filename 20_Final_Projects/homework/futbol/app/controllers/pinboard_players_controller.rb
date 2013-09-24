@@ -4,6 +4,7 @@ class PinboardPlayersController < ApplicationController
    session[:player] = params[:id]
    @pinboard_player = PinboardPlayer.new(player_id: params[:id]) 
    @current_user_pinboards = get_user_pinboards
+   user_pinboards_check?
   end
 
   def create
@@ -20,13 +21,18 @@ class PinboardPlayersController < ApplicationController
   end
 
   private
+
   def get_user_pinboards
 
   	if current_user
-      current_user.pinboards
-  		#redirect_to new_pinboard_path, notice: "Please create a new pinboard"
+       current_user.pinboards
+  		 #redirect_to new_pinboard_path, notice: "Please create a new pinboard"
   	else
   		redirect_to root_path, notice: "Please sign in to pin players"
   	end
+  end
+
+  def user_pinboards_check?
+    redirect_to new_pinboard_path, notice: "Please create a pinboard" if get_user_pinboards.empty?
   end
 end

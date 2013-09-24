@@ -1,4 +1,7 @@
 Futbol::Application.routes.draw do
+  devise_scope :user do
+    get "sign_out", to: "devise/sessions#destroy"
+  end
   get "players", to: "players#index"
   get "dashboard", to: "dashboard#index"
   get "pin_player", to: "pinboard_players#new"

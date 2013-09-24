@@ -17,6 +17,7 @@
 #
 
 class Player < ActiveRecord::Base
+	mount_uploader :image, ImageUploader
 	belongs_to 				:position
 	belongs_to 				:club
 	has_many				:pinboard_players

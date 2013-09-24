@@ -22,6 +22,7 @@
 #
 
 class User < ActiveRecord::Base
+  # mount_uploader :image, ImageUploader
 	has_many :pinboards
 	has_many :pins, through: :pinboards, source: :players
 	
