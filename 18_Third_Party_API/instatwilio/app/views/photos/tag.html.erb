@@ -1,0 +1,9 @@
+<h1>Photos tagged #<%= @tag %></h1>
+
+<ul>
+  <% @image_urls.each do |image_url| %>
+    <li>
+      <%= image_tag image_url %>
+    </li>
+  <% end %>
+</ul>
