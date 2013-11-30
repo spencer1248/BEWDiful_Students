@@ -1,0 +1,19 @@
+	<%#= label_tag(:q, "Search for:") %>
+	<%#= text_field_tag(:q) %>
+	<%#= submit_tag("Search") %>
+<%# end %>
+
+<ol>
+<% @shirts.each do |shirt| %>
+	<li>
+		<%= link_to shirt_path(shirt) do %>
+		<p>
+			<%= shirt.name %>
+		</p>
+		<p>
+			<%= shirt.description %>
+		</p>
+		<% end %>
+	</li>
+	<% end %>
+</ol>

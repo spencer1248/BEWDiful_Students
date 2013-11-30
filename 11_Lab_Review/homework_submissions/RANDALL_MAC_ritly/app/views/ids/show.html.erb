@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @id.url %>
+</p>
+
+<p>
+  <strong>Hashcode:</strong>
+  <%= @id.hashcode %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @id.created %>
+</p>
+
+<p>
+  <strong>Updated:</strong>
+  <%= @id.updated %>
+</p>
+
+<%= link_to 'Edit', edit_id_path(@id) %> |
+<%= link_to 'Back', ids_path %>
