@@ -1,0 +1,8 @@
+<h1>Add a new URL to shorten:</h1>
+
+<%= form_for @url do |f| %>
+  <%= f.label 'Enter a url to shorten' %>
+  <%= f.text_field :link %>
+  <%= f.submit %>
+<% end %>
+

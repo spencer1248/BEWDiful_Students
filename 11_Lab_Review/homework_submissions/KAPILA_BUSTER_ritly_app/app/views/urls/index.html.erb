@@ -1,0 +1,9 @@
+<h1>Index</h1>
+
+<%= link_to "Add a new URL to shorten", new_url_path %>
+
+<ol>
+<% @urls.each do |url| %>
+	<li>Link: <%= url.link %> | Hash code: <%= url.hash_code %> | <%= link_to 'Preview', url %></li>
+<% end %>
+</ol>
